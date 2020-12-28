@@ -174,7 +174,7 @@ p {
 }
 a {
   color: #D6BE42;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-family: 'Montserrat', Helvetica, sans-serif;
 }
 img {
@@ -214,7 +214,6 @@ img {
   z-index: 1;
   top: 40%;
   left: 30%;
-  max-width: 60%;
 }
 #splash-title {
   color: #F9F2F3;
@@ -223,13 +222,19 @@ img {
 .splash-nav {
   display: flex;
   justify-content: space-between;
+  background-color: yellow;
+  border: 1px dashed red;
 }
 .splash-nav #splash-nav-left {
   text-decoration: none;
   line-height: 2rem;
+  background-color: greenyellow;
+  border: 1px dashed blue;
 }
 .splash-nav #splash-nav-right {
   text-decoration: none;
   text-align: right;
   line-height: 2rem;
+  background-color: greenyellow;
+  border: 1px dashed blue;
 }
