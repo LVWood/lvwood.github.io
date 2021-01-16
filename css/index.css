@@ -189,7 +189,7 @@ img {
   height: 100%;
   background-color: #333132;
   position: absolute;
-  z-index: 0;
+  z-index: 2;
   clip-path: polygon(0% 0%, 40% 0%, 60% 100%, 0% 100%);
 }
 #right-block {
@@ -197,7 +197,7 @@ img {
   height: 100%;
   background-color: #66303b;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 #background-image {
   width: auto;
@@ -211,7 +211,7 @@ img {
 }
 .content-container {
   position: absolute;
-  z-index: 1;
+  z-index: 7;
   top: 40%;
   left: 30%;
 }
