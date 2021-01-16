@@ -222,19 +222,13 @@ img {
 .splash-nav {
   display: flex;
   justify-content: space-between;
-  background-color: yellow;
-  border: 1px dashed red;
 }
 .splash-nav #splash-nav-left {
   text-decoration: none;
   line-height: 2rem;
-  background-color: greenyellow;
-  border: 1px dashed blue;
 }
 .splash-nav #splash-nav-right {
   text-decoration: none;
   text-align: right;
   line-height: 2rem;
-  background-color: greenyellow;
-  border: 1px dashed blue;
 }
