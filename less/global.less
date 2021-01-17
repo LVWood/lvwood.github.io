@@ -10,10 +10,11 @@ html, body {
   font-family: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1, h2, p {
+h2, p {
   font-family: 'Montserrat', Helvetica, sans-serif;
 }
-h3, h4, h5 {
+
+h1, h3, h4, h5 {
   font-family: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -48,9 +49,27 @@ p {
 a {
   font-family: 'Montserrat', Helvetica, sans-serif;
 }
+
+footer {
+  z-index: 6;
+  position: absolute;
+  bottom: 0;
+  padding: 2%;
+  width: 100%;
+}
+
+.body-container {
+  max-width: 900px;
+  padding: 5% 20%;
+  @media @mobile {
+    padding: 5% 10%;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 
 
