@@ -181,10 +181,10 @@ img {
 }
 .header-nav {
   padding: 2%;
-  height: 20%;
   background-color: #333132;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 4px 10px #d6d4d4;
 }
 .header-nav .basic-nav a {
   position: relative;
@@ -201,10 +201,11 @@ img {
 }
 .header-nav-design {
   padding: 2%;
-  height: 20%;
+  height: 15%;
   background-color: #66303b;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 4px 10px #d6d4d4;
 }
 .header-nav-design .design-nav a {
   position: relative;
@@ -221,10 +222,11 @@ img {
 }
 .header-nav-music {
   padding: 2%;
-  height: 20%;
+  height: 15%;
   background-color: #D6BE42;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 4px 10px #d6d4d4;
 }
 .header-nav-music .music-nav a {
   position: relative;
