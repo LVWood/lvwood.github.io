@@ -1,2 +1,77 @@
 // Navigation Styles here
 
+.header-nav {
+    padding: 2%;
+    height: 20%;
+    background-color: @off-black;
+    display: flex;
+    justify-content: space-between;
+    // .test();
+    .basic-nav a {
+        position: relative;
+        top: 30%;
+        font-size: 1.6rem;
+        color: @off-white;
+        text-decoration: none;
+        padding: 0 10px;
+        @media @mobile {
+            visibility: hidden;
+        }
+    }
+}
+
+.header-nav-design {
+    padding: 2%;
+    height: 20%;
+    background-color: @berry;
+    display: flex;
+    justify-content: space-between;
+    .design-nav a {
+        position: relative;
+        top: 30%;
+        color: @off-white;
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding: 20px 10px;
+        @media @mobile {
+            visibility: hidden;
+        }
+    }
+
+}
+
+.header-nav-music {
+    padding: 2%;
+    height: 20%;
+    background-color: @mustard;
+    display: flex;
+    justify-content: space-between;
+    .music-nav a {
+        position: relative;
+        top: 30%;
+        color: @blackberry;
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding: 0 10px;
+        @media @mobile {
+            visibility: hidden;
+        }
+    }
+}
+
+.initial-logo {
+    .logo-style();
+    color: @mustard;
+    text-decoration: none;
+    @media @mobile {
+        font-size: 2.4rem;
+    }
+}
+.initial-logo-music {
+    .logo-style();
+    color: @blackberry;
+    text-decoration: none;
+    @media @mobile {
+        font-size: 2.4rem;
+    }
+}
