@@ -182,7 +182,6 @@ footer {
   width: 100%;
 }
 .body-container {
-  max-width: 900px;
   padding: 5% 20%;
 }
 @media (max-width: 500px) {
