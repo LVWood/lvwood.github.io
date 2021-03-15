@@ -184,9 +184,17 @@ footer {
 .body-container {
   padding: 5% 20%;
 }
+@media (max-width: 850px) {
+  .body-container {
+    padding: 5% 15%;
+  }
+}
 @media (max-width: 500px) {
   .body-container {
     padding: 5% 10%;
+  }
+  .body-container p {
+    font-size: 1rem;
   }
 }
 .header-nav {
