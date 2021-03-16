@@ -19,8 +19,14 @@ h1, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 7.2rem;
-  font-size: 72px;
+  font-size: 12rem;
+  // font-size: 80px; 
+  @media @tablet {
+    font-size: 8.0rem;
+  }
+  @media @mobile {
+    font-size: 5.4rem;
+  }
 }
 
 h2 {
