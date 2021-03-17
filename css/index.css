@@ -338,22 +338,6 @@ footer {
   color: #F9F2F3;
   margin: 5%;
 }
-.splash-image {
-  position: fixed;
-  top: 7%;
-  height: auto;
-  width: 100%;
-  z-index: -1;
-}
-.splash-image #headshot {
-  width: 100%;
-  height: auto;
-}
-@media (max-width: 850px) {
-  .splash-image {
-    position: relative;
-  }
-}
 .tab-section {
   margin-top: 2%;
   display: flex;
