@@ -1,64 +1,41 @@
 
+.container {
+  
+}
+
+.content-container {
+  //image stuff
+  background-image: url("https://lvwood.github.io/images/Leslee2018small.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
 .main-splash {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+  padding: 2% 10%;
   background-color: @blackberry;
   opacity: 75%;
-  z-index: 1; 
-  height: 100%;
   @media @tablet {
-    opacity: 100%;
+    // opacity: 100%;
   }
-  background-image: url('lvwood.github.io/images/Leslee2018small.jpg');
-  background-size: cover;
 }
 #splash-title {
   color: @off-white;
   margin: 5%;
 }
 
-
-
-// .splash-image {
-//   position: fixed;
-//   top: 7%;
-//   height: auto;
-//   width: 100%;
-//   // overflow: hidden;
-//   z-index: -1;
-//   // margin-top: 1%;
-//   #headshot {
-//     width: 100%;
-//     height: auto;
-//     // border: 4px solid @blackberry; 
-//   }
-//   @media @tablet {
-//     position: relative;
-//   }
-// }
-
-.tab-section {
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-around;
-}
-.home-tabs {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: @blackberry;
-  margin-bottom: 10%;
-  img {
-    width: 90%;
-    margin: 5%;    
-    align-self: center;
-    height: auto;
-  }
-}
-.tab-text {
-  margin: 5%;
+.slides {
+  padding: 5% 0;
   color: @off-white;
-  text-align: center;
+  width: 40%;
+  @media @tablet {
+    width: 70%;
+  }
+  @media @mobile {
+    width: 80%;
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
