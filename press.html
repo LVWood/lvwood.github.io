@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leslee Wood</title>
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <!--icon library for hamburgers-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+  <header class="header-nav">
+    <a href="index.html" class="initial-logo" >LW</a>
+    <nav class="nav" id="myNav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="works.html" >WORKS</a> 
+      <a href="cv.html">CV</a>
+      <a href="press.html" class="active">PRESS KIT</a>
+
+    </nav>   
+  </header>
+   
+    <section class="body-container">
+        <div>
+            <section id="approach">
+                <h3 class="body-heading">WORK APPROACH</h3>
+                <p>approach lorem ipsum</p>
+            </section>
+            <section id="cv">
+                <h3 class="body-heading">CV</h3>
+                <p>cv lorem ipsum</p>
+            </section>
+        </div>
+    </section>
+    <footer class="basic-footer">
+      <h6>email - leslee.wood@gmail.com | copyright 2021 by LV Wood</h6>
+    </footer>
+  
+
+  </div><!-- container -->
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myNav");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
+    }
+    </script>
+
+</body>
+</html>

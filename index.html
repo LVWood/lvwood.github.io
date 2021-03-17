@@ -3,56 +3,55 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Leslee Wood</title>
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-  <link href="css/index.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Leslee Wood</title>
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <!--icon library for hamburgers-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
+  <header class="header-nav">
+    <a href="index.html" class="initial-logo">LW</a>
+    <nav class="nav" id="myNav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="works.html">WORKS</a> 
+      <a href="cv.html">CV</a>
+      <a href="press.html" >PRESS KIT</a>
 
-  <div class="container">
-    <header class="header-nav">
-      <a href="index.html" class="initial-logo">LW</a>
-      <nav class="nav">
-        <a href="music-home.html" >MUSIC</a>
-        <a href="design-home.html">DESIGN</a>
-        <!-- <a href="/contact.html" >CONTACT</a>
-        <a href="/index.html" >MAIN</a> -->
-      </nav>   
-    </header>
-    
-    <div class="content-container">
-      <div class="main-splash">
-        <span id="splash-title">
-          <h1>LESLEE WOOD</h1>
-          <h4>composer | designer </h4>
-        </span>
-        <div class="slides">
-          <span class="parallax">
-            <h3>MUSIC</h3><br>
-            <!-- <p>some bullshit about my music Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc vel.<br> Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Lectus sit amet est placerat in egestas. Quis imperdiet massa tincidunt nunc pulvinar sapien. <br>In hac habitasse platea dictumst. Eget velit aliquet sagittis id. Et netus et malesuada fames ac. Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. <br>Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et.</p> -->
-          </span>
-          <br>
-          <span class="parallax">
-            <h3>VISUAL DESIGN</h3><br>
-            <!-- <p>some bullshit about design stuff Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Mus mauris vitae ultricies leo integer malesuada nunc vel. Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Lectus sit amet est placerat in egestas. <br>Quis imperdiet massa tincidunt nunc pulvinar sapien. In hac habitasse platea dictumst. Eget velit aliquet sagittis id. Et netus et malesuada fames ac. Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. </p> -->
-          </span>
-        </div>
-      </div>
-
-
+    </nav>   
+  </header>
+  <div class="bg">
+    <div class="splash-title">
+      <h1>LESLEE WOOD</h1>
+      <h4>composer | performer </h4>
     </div>
-  </div>
+</div>
+</div>  
+
 
   <footer class="basic-footer">
     <h6>email - leslee.wood@gmail.com | copyright 2021 by LV Wood</h6>
   </footer>
+
+
+  
+<script>
+  function myFunction() {
+    var x = document.getElementById("myNav");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  }
+  </script>
+
 </body>
 </html>

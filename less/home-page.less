@@ -1,41 +1,26 @@
 
-.container {
-  
-}
-
-.content-container {
-  //image stuff
+.bg {
+  height: 100%;
   background-image: url("https://lvwood.github.io/images/Leslee2018small.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100%;
-}
-.main-splash {
-  padding: 2% 10%;
-  background-color: @blackberry;
-  opacity: 75%;
-  @media @tablet {
-    // opacity: 100%;
+  overflow: hidden;
+  @media @mobile {
+    background-position: right;
   }
-}
-#splash-title {
-  color: @off-white;
-  margin: 5%;
 }
 
-.slides {
-  padding: 5% 0;
+.splash-title {
   color: @off-white;
-  width: 40%;
+  padding: 10% 5%;
+  position: fixed;
   @media @tablet {
-    width: 70%;
+    padding: 20% 5%;
   }
   @media @mobile {
-    width: 80%;
-    p {
-      font-size: 1.2rem;
-    }
+    padding: 30% 5%;
+
   }
 }

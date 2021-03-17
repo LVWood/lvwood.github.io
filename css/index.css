@@ -136,6 +136,8 @@ html {
 html,
 body {
   font-family: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 100%;
+  margin: 0;
 }
 h2,
 p {
@@ -152,10 +154,10 @@ h1 {
 }
 @media (max-width: 850px) {
   h1 {
-    font-size: 8rem;
+    font-size: 7.2rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 5.4rem;
   }
@@ -181,6 +183,12 @@ h6 {
   font-size: 14px;
   line-height: 2rem;
 }
+@media (max-width: 600px) {
+  h6 {
+    font-size: 1rem;
+    font-size: 10px;
+  }
+}
 p {
   font-size: 1.4rem;
   font-size: 14px;
@@ -190,7 +198,6 @@ a {
   font-family: 'Montserrat', Helvetica, sans-serif;
 }
 footer {
-  z-index: 6;
   position: absolute;
   bottom: 0%;
   width: 100%;
@@ -203,7 +210,7 @@ footer {
     padding: 5% 15%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .body-container {
     padding: 5% 10%;
   }
@@ -215,20 +222,66 @@ footer {
   padding: 2%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #333132;
-  box-shadow: 0px 4px 3px #333132;
-  position: static;
+  opacity: 75%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
   top: 0%;
 }
-.header-nav .nav a {
+@media (max-width: 600px) {
+  .header-nav {
+    padding: 4%;
+  }
+}
+.nav a {
   position: relative;
-  top: 30%;
   font-size: 1.6rem;
   color: #F9F2F3;
+  background-color: #333132;
   text-decoration: none;
-  padding: 0 30px;
+  margin-left: 50px;
 }
-@media (max-width: 500px) {
+.nav a:hover {
+  color: #D6BE42;
+  background-color: #333132;
+}
+.nav a.active {
+  color: #9A4859;
+  background-color: #333132;
+}
+.nav .icon {
+  display: none;
+}
+@media (max-width: 600px) {
+  .nav a {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive a.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    line-height: 1.4em;
+  }
 }
 .design-header-nav {
   padding: 2%;
@@ -246,7 +299,7 @@ footer {
   text-decoration: none;
   padding: 20px 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .design-header-nav .design-nav a {
     visibility: hidden;
   }
@@ -267,7 +320,7 @@ footer {
   text-decoration: none;
   padding: 0 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .music-header-nav .music-nav a {
     visibility: hidden;
   }
@@ -278,7 +331,7 @@ footer {
   color: #D6BE42;
   text-decoration: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .initial-logo {
     font-size: 2.4rem;
   }
@@ -289,7 +342,7 @@ footer {
   color: #33181D;
   text-decoration: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .initial-logo-music {
     font-size: 2.4rem;
   }
@@ -301,6 +354,7 @@ footer {
   text-align: center;
   bottom: 0%;
   position: fixed;
+  opacity: 75%;
 }
 .design-footer {
   background-color: #66303b;
@@ -318,40 +372,32 @@ footer {
   bottom: 0%;
   position: fixed;
 }
-.content-container {
+.bg {
+  height: 100%;
   background-image: url("https://lvwood.github.io/images/Leslee2018small.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100%;
+  overflow: hidden;
 }
-.main-splash {
-  padding: 2% 10%;
-  background-color: #33181D;
-  opacity: 75%;
-}
-@media (max-width: 850px) {
-}
-#splash-title {
-  color: #F9F2F3;
-  margin: 5%;
-}
-.slides {
-  padding: 5% 0;
-  color: #F9F2F3;
-  width: 40%;
-}
-@media (max-width: 850px) {
-  .slides {
-    width: 70%;
+@media (max-width: 600px) {
+  .bg {
+    background-position: right;
   }
 }
-@media (max-width: 500px) {
-  .slides {
-    width: 80%;
+.splash-title {
+  color: #F9F2F3;
+  padding: 10% 5%;
+  position: fixed;
+}
+@media (max-width: 850px) {
+  .splash-title {
+    padding: 20% 5%;
   }
-  .slides p {
-    font-size: 1.2rem;
+}
+@media (max-width: 600px) {
+  .splash-title {
+    padding: 30% 5%;
   }
 }
