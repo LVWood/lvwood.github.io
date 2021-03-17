@@ -152,7 +152,7 @@ h5 {
 h1 {
   font-size: 12rem;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   h1 {
     font-size: 7.2rem;
   }
@@ -192,7 +192,7 @@ h6 {
 p {
   font-size: 1.4rem;
   font-size: 14px;
-  line-height: 2rem;
+  line-height: 2.4rem;
 }
 a {
   font-family: 'Montserrat', Helvetica, sans-serif;
@@ -205,7 +205,7 @@ footer {
 .body-container {
   padding: 5% 20%;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .body-container {
     padding: 5% 15%;
   }
@@ -226,9 +226,10 @@ footer {
   background-color: #333132;
   opacity: 75%;
   width: 100%;
+  height: 100px;
   position: absolute;
-  z-index: 10;
   top: 0%;
+  z-index: 10;
 }
 @media (max-width: 600px) {
   .header-nav {
@@ -283,46 +284,67 @@ footer {
     line-height: 1.4em;
   }
 }
-.design-header-nav {
+.sub-nav {
   padding: 2%;
-  height: 15%;
-  background-color: #66303b;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 4px 10px #d6d4d4;
-}
-.design-header-nav .design-nav a {
-  position: relative;
-  top: 30%;
-  color: #F9F2F3;
-  font-size: 1.6rem;
-  text-decoration: none;
-  padding: 20px 10px;
+  align-items: center;
+  background-color: #333132;
+  width: 100%;
+  z-index: 10;
+  top: 0%;
 }
 @media (max-width: 600px) {
-  .design-header-nav .design-nav a {
-    visibility: hidden;
+  .sub-nav {
+    padding: 4%;
   }
 }
-.music-header-nav {
-  padding: 2%;
-  height: 15%;
-  background-color: #D6BE42;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0px 4px 10px #d6d4d4;
-}
-.music-header-nav .music-nav a {
+.nav a {
   position: relative;
-  top: 30%;
-  color: #33181D;
   font-size: 1.6rem;
+  color: #F9F2F3;
+  background-color: #333132;
   text-decoration: none;
-  padding: 0 10px;
+  margin-left: 50px;
+}
+.nav a:hover {
+  color: #D6BE42;
+  background-color: #333132;
+}
+.nav a.active {
+  color: #9A4859;
+  background-color: #333132;
+}
+.nav .icon {
+  display: none;
 }
 @media (max-width: 600px) {
-  .music-header-nav .music-nav a {
-    visibility: hidden;
+  .nav a {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive a.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    line-height: 1.4em;
   }
 }
 .initial-logo {
@@ -336,17 +358,6 @@ footer {
     font-size: 2.4rem;
   }
 }
-.initial-logo-music {
-  font-family: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 3.6rem;
-  color: #33181D;
-  text-decoration: none;
-}
-@media (max-width: 600px) {
-  .initial-logo-music {
-    font-size: 2.4rem;
-  }
-}
 .basic-footer {
   background-color: #333132;
   color: #F9F2F3;
@@ -356,21 +367,13 @@ footer {
   position: fixed;
   opacity: 75%;
 }
-.design-footer {
-  background-color: #66303b;
+.sub-footer {
+  background-color: #333132;
   color: #F9F2F3;
   padding: 20px;
   text-align: center;
   bottom: 0%;
-  position: fixed;
-}
-.music-footer {
-  background-color: #D6BE42;
-  color: #33181D;
-  padding: 20px;
-  text-align: center;
-  bottom: 0%;
-  position: fixed;
+  position: relative;
 }
 .bg {
   height: 100%;
@@ -391,7 +394,7 @@ footer {
   padding: 10% 5%;
   position: fixed;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .splash-title {
     padding: 20% 5%;
   }
@@ -400,4 +403,33 @@ footer {
   .splash-title {
     padding: 30% 5%;
   }
+}
+.worksList {
+  border: 1px solid #66303b;
+  margin: 5% 10%;
+}
+@media (max-width: 600px) {
+  .worksList {
+    margin: 3% 5%;
+  }
+}
+.list-heading {
+  background-color: #66303b;
+  color: #F9F2F3;
+  padding: 10px 5%;
+}
+.item {
+  padding: 10px 5%;
+}
+.item .title {
+  line-height: 3rem;
+}
+.item .type {
+  font-weight: bold;
+}
+.item .premiere {
+  font-size: 1rem;
+}
+.item a {
+  font-size: 1.4rem;
 }
