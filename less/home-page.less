@@ -1,75 +1,64 @@
-.container {
-  // width: 800px;
-  margin: 0 auto;
-  // overflow: hidden;
-}
-
-// #left-block {
-//   width: 100%;
-//   height: 100%;
-//   background-color: @berry;
-//   position: absolute;
-//   z-index: 2;
-//   // .test();
-//   clip-path: polygon(0% 0%, 40% 0%, 60% 100%, 0% 100%);
-// }
-//   #right-block {
-//   width: 100%;
-//   height: 100%;
-//   background-color: @mustard;
-//   position: absolute;
-//   z-index: 1;
-//   // .test2();
-// }
-
-.background-image {
-  position: fixed;
-  top: 0%;
-  max-height: 100%;
-  overflow: hidden;
-  z-index: -1;
-}
-// .content-container {
-//   position: absolute;
-//   z-index: 7;
-//   top: 40%;
-//   left: 30%;
-//   // max-width: 60%;
-// }
 
 .main-splash {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  // .test();
-  z-index: 1;
-  margin-top: 20%;
+  align-items: left;
+  background-color: @blackberry;
+  opacity: 75%;
+  z-index: 1; 
+  height: 100%;
+  @media @tablet {
+    opacity: 100%;
+  }
+  background-image: url('lvwood.github.io/images/Leslee2018small.jpg');
+  background-size: cover;
 }
 #splash-title {
   color: @off-white;
-
+  margin: 5%;
 }
-.splash-nav {
-  display: flex;
-  // justify-content: space-around;
-  padding-top: 30px;
-  // .test();
 
-  #splash-nav-left {
-    text-decoration: none;
-    line-height: 2.5rem;
-    padding-right: 30px;
-    // .test2();
+
+
+.splash-image {
+  position: fixed;
+  top: 7%;
+  height: auto;
+  width: 100%;
+  // overflow: hidden;
+  z-index: -1;
+  // margin-top: 1%;
+  #headshot {
+    width: 100%;
+    height: auto;
+    // border: 4px solid @blackberry; 
   }
-  #splash-nav-right {
-    text-decoration: none;
-    text-align: right;
-    line-height: 2.5rem;
-    padding-left: 30px;
-    // .test2();
+  @media @tablet {
+    position: relative;
   }
-  a {
-    font-size: 2.1rem;
-    color: @off-white;
+}
+
+.tab-section {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+.home-tabs {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: @blackberry;
+  margin-bottom: 10%;
+  img {
+    width: 90%;
+    margin: 5%;    
+    align-self: center;
+    height: auto;
   }
+}
+.tab-text {
+  margin: 5%;
+  color: @off-white;
+  text-align: center;
 }

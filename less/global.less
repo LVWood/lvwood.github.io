@@ -19,8 +19,14 @@ h1, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 7.2rem;
-  font-size: 72px;
+  font-size: 12rem;
+  // font-size: 80px; 
+  @media @tablet {
+    font-size: 8.0rem;
+  }
+  @media @mobile {
+    font-size: 5.4rem;
+  }
 }
 
 h2 {
@@ -40,7 +46,11 @@ h5 {
   font-size: 1.8rem;
   font-size: 18px;
 }
-
+h6 {
+  font-size: 1.4rem;
+  font-size: 14px;
+  line-height: 2rem;
+}
 p {
   font-size: 1.4rem;
   font-size: 14px;
@@ -60,8 +70,14 @@ footer {
 .body-container {
   // max-width: 900px;
   padding: 5% 20%;
+  @media @tablet {
+    padding: 5% 15%;
+  }
   @media @mobile {
     padding: 5% 10%;
+    p {
+      font-size: 1rem;
+    }
   }
 }
 
