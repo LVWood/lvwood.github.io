@@ -245,11 +245,11 @@ footer {
   margin-left: 50px;
 }
 .nav a:hover {
-  color: #D6BE42;
+  color: #CCC5C6;
   background-color: #333132;
 }
 .nav a.active {
-  color: #9A4859;
+  color: #D6BE42;
   background-color: #333132;
 }
 .nav .icon {
@@ -308,11 +308,11 @@ footer {
   margin-left: 50px;
 }
 .nav a:hover {
-  color: #D6BE42;
+  color: #CCC5C6;
   background-color: #333132;
 }
 .nav a.active {
-  color: #9A4859;
+  color: #D6BE42;
   background-color: #333132;
 }
 .nav .icon {
@@ -366,6 +366,23 @@ footer {
   bottom: 0%;
   position: fixed;
   opacity: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.basic-footer a {
+  color: #F9F2F3;
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 0 5px;
+}
+@media (max-width: 600px) {
+  .basic-footer a {
+    font-size: 1rem;
+    font-size: 10px;
+  }
 }
 .sub-footer {
   background-color: #333132;
@@ -374,6 +391,24 @@ footer {
   text-align: center;
   bottom: 0%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+.sub-footer a {
+  color: #F9F2F3;
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 0 5px;
+}
+@media (max-width: 600px) {
+  .sub-footer a {
+    font-size: 1rem;
+    font-size: 10px;
+  }
 }
 .bg {
   height: 100%;
@@ -404,9 +439,16 @@ footer {
     padding: 30% 5%;
   }
 }
+.download {
+  padding: 50px 10% 0px 10%;
+  text-align: left;
+}
+.download a {
+  color: #333132;
+  font-size: 1.4rem;
+}
 .worksList {
-  border: 1px solid #66303b;
-  margin: 5% 10%;
+  margin: 10px 10% 5% 10%;
 }
 @media (max-width: 600px) {
   .worksList {
@@ -419,7 +461,7 @@ footer {
   padding: 10px 5%;
 }
 .item {
-  padding: 10px 5%;
+  padding: 8px 5%;
 }
 .item .title {
   line-height: 3rem;
@@ -432,4 +474,52 @@ footer {
 }
 .item a {
   font-size: 1.4rem;
+}
+.bio-section {
+  margin: 2% 10% 5% 10%;
+}
+@media (max-width: 600px) {
+  .bio-section {
+    margin: 3% 5%;
+  }
+}
+.tab {
+  overflow: hidden;
+}
+.tablink {
+  color: #9A9596;
+  font-family: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3.6rem;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2% 5%;
+  font-size: 2.1rem;
+  width: 33.3%;
+  transition: 0.3s;
+}
+@media (max-width: 1000px) {
+  .tablink {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 600px) {
+  .tablink {
+    font-size: 1.4rem;
+  }
+}
+.tablink:hover {
+  background-color: #CCC5C6;
+}
+.tablink.active {
+  background-color: #66303b;
+  color: #F9F2F3;
+}
+.tabcontent {
+  color: #333132;
+  display: none;
+  padding: 5%;
+  text-align: left;
+  background-color: #f8f8f8;
 }
