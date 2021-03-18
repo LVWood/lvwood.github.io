@@ -24,31 +24,53 @@
         <i class="fa fa-bars"></i>
       </a>
       <a href="works.html" >WORKS</a> 
-      <a href="cv.html">CV</a>
+      <a href="about.html">ABOUT</a>
       <a href="press.html" class="active">PRESS KIT</a>
 
     </nav>   
   </header>
    
-    <section class="body-container">
-        <div>
-            <section id="approach">
-                <h3 class="body-heading">WORK APPROACH</h3>
-                <p>approach lorem ipsum</p>
-            </section>
-            <section id="cv">
-                <h3 class="body-heading">CV</h3>
-                <p>cv lorem ipsum</p>
-            </section>
-        </div>
-    </section>
+  <section class="bio-section">
+   <div class="tab">
+    <button class="tablink" onclick="openTab(event, 'short')" id="defaultOpen" >SHORT BIO</button>
+    <button class="tablink" onclick="openTab(event, 'long')">LONG BIO</button>
+    <button class="tablink" onclick="openTab(event, 'performer')">PERFORMANCE</button>
+   </div> 
+ 
+   <div id="short" class="tabcontent">
+    <h4>Short Composition Bio (206 words)</h4><br>
+    <p>Described as “haunting, sensual, and earthy,” Leslee Wood’s music draws inspiration from the sounds of the natural world and from humankind’s tenuous relationships with the earth and with each other. From a childhood spent in rural America, including the wide tundra of western Alaska and the buzzing deserts of Arizona and Utah, Wood’s spare, incisive music evokes both the constant hum of life and the yawning silence of raw nature. </p> <br>
+    <p>Wood’s inspiration comes not only from nature, but from humanity’s relationship with the world and with each other. Conflict, fear, love, pain, loss, and redemption are persistent themes in her work, which has explored issues from gun-violence and sexual-assault to climate change. Wood’s keen interest in the musical practices of the middle-ages lends a timeless quality to her vocal and choral music which combines chant, improvisation, and early contrapuntal techniques with colorful, searing harmonies and contemporary forms. </p> <br>
+    <p>Wood is a founding member of KC VITAs and in 2016 she was invited to serve as the ensemble’s composer in residence. She is also the founder and artistic director of the vocal ensemble Ignea Strata, which specializes in both early and contemporary vocal music from the earliest notated songs and chants to premieres of the newest vocal repertoire. (206 words)</p><br>
+  </div>
+
+   <div id="long" class="tabcontent">
+    <h4>Long Composition Bio (328 words)</h4><br>
+    <p>Described as “haunting, sensual, and earthy,” Leslee Wood’s music draws inspiration from the sounds of the natural world and from humankind’s tenuous relationships with the earth and with each other. From a childhood spent in rural America, including the wide tundra of western Alaska and the buzzing deserts of Arizona and Utah, Wood’s spare, incisive music evokes both the constant hum of life and the yawning silence of raw nature. In Suite for Chignik Bay, commissioned by the Violetta Duo in 2015, the flute and clarinet animate snatches of youthful memories of bush Alaska, by turns playful, frightening, and poignant. A current project, Pando is a collaboration with Municipal Ballet of Salt Lake City, depicting through music and dance the epochs-long life of one of Earth’s oldest and largest living organisms, an 80,000-year-old grove of quaking aspen in central Utah.</p><br>
+    <p>Wood’s inspiration comes not only from nature, but from humanity’s relationship with the world and with each other throughout history and the present. Conflict, fear, love, pain, loss, and redemption are persistent themes in her work, which has confronted current issues from gun-violence (We Must Like It, 2018) to sexual assault (The Safest Space, 2017). Trained as a musicologist, Wood’s keen interest in the musical practices of the middle-ages lends a timeless quality to her vocal and choral music which combines chant, improvisation, and early contrapuntal techniques with colorful, searing harmonies and contemporary forms.</p><br>
+    <p>In 2015 Wood was a founding member of new music ensemble KC VITAs and in 2016 she was invited to serve as the ensemble’s composer in residence and since then has collaborated with the group on a wide range of projects including an upcoming oratorio, On the Back of the Black for chorus, soloists, and chamber ensemble. She is also the founder and artistic director of the vocal ensemble Ignea Strata, which specializes in both early and contemporary vocal music from the earliest notated songs and chants to premieres of the newest vocal repertoire. </p><br>
+   </div>
+
+   <div id="performer" class="tabcontent">
+    <h4>Performance Bio</h4><br>
+    <p>Coming soon </p><br>
+   </div>
+  </section> 
+
+  <section>
+    <br>
+    <h3 class="list-heading">PHOTOS</h3>
+    <a href="images/Leslee2018small.jpg" download></a>
+  </section>
+
     <footer class="sub-footer">
-      <h6>email - leslee.wood@gmail.com | copyright 2021 by LV Wood</h6>
+      <h6>email -</h6><a href="mailto:leslee.wood@gmail.com"> leslee.wood@gmail.com </a><h6>| copyright 2021 by LV Wood</h6>
     </footer>
   
 
   </div><!-- container -->
 
+<!--navigation interaction-->
   <script>
     function myFunction() {
       var x = document.getElementById("myNav");
@@ -59,6 +81,37 @@
       }
     }
     </script>
+
+
+<!--tab interaction-->
+<script>
+    function openTab(evt, length) {
+  // Declare all variables
+  var i, tabcontent, tablink;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablink = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablink.length; i++) {
+    tablink[i].className = tablink[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(length).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+
 
 </body>
 </html>

@@ -23,71 +23,24 @@
           <i class="fa fa-bars"></i>
         </a>
         <a href="works.html" class="active">WORKS</a> 
-        <a href="cv.html">CV</a>
+        <a href="about.html">ABOUT</a>
         <a href="press.html" >PRESS KIT</a>
   
       </nav>   
     </header>
    
+    <div class="download">
+      <a href="documents/Comp CV 2021.pdf" download>LVWood CV & Works List (download)</a>
+    </div>
+
     <div class="worksList">
-      <section class="list">
-        <h3 class="list-heading">CURRENT PROJECTS</h3>
-        <br>
-        <div class="item">
-          <h4 class="title">The Trembling Giant</h4>
-          <p class="type">ballet</p>
-          <p class="instrumentation">open-instrumentation; collaboration with Municipal Ballet Company, Salt Lake City, UT</p>
-          <p class="premiere">premiere date pending</p>
-          <!-- <p class="listen">link if appropriate</p> -->
-          <br>
-        </div>
-        <div class="item">
-          <h4 class="title">Daughter of Zion</h4>
-          <p class="type">ballet (select sections)</p>
-          <p class="instrumentation">violin and piano; collaboration with Municipal Ballet Company</p>
-          <p class="premiere">premiere upcoming (September 22, 2021 in Zion National Park, Utah)</p>
-          <!-- <p class="listen">link if appropriate</p> -->
-          <br>
-        </div>
-        <div class="item">
-          <h4 class="title">Haiku</h4>
-          <p class="type">miniatures</p>
-          <p class="instrumentation">solo piano; after the poetry of Matsuo Basho, Kobayashi Issa, and Yosa Buson</p>
-          <p class="premiere">premiere upcoming (September 2021)</p>
-          <!-- <p class="listen">link if appropriate</p> -->
-          <br>
-        </div>
-        <div class="item">
-          <h4 class="title">On the Back of the Black</h4>
-          <p class="type">oratorio</p>
-          <p class="instrumentation">mezzo-soprano & tenor solo, mixed choir, Pierrot Ensemble with percussion; collaboration with KC VITAs</p>
-          <p class="premiere">premiere upcoming (August 3 & 5, 2021)</p>
-          <p class="listen">link if appropriate</p>
-          <br>
-        </div>
-        <div class="item">
-          <h4 class="title">Isolation Meditation</h4>
-          <p class="type">song</p>
-          <p class="instrumentation">SATB Choir; commissioned by The Pembroke School, Kansas City, MO</p>
-          <p class="premiere">premiere upcoming (May 2021)</p>
-          <!-- <p class="listen">link if appropriate</p> -->
-          <br>
-        </div>
-        <div class="item">
-          <h4 class="title">Fish</h4>
-          <p class="type">song cycle</p>
-          <p class="instrumentation">medium voice and piano; text by Kyle Hunter; collaboration with KC VITAs, Kansas City, MO</p>
-          <p class="premiere">Mvt. 4 "Unloaded" premiered January 31, 2021 Kansas City via livestream. <br>Full premiere date pending.</p>
-          <!-- <p class="listen">link if appropriate</p> -->
-          <br>
-        </div>
-      
-      </section>
-      <br>
-      <section class="list">
-        <h3 class="list-heading">WORKS LIST</h3>
-        <br>
-       
+      <div class="tab">
+        <button class="tablink" onclick="openTab(event, 'works')" id="defaultOpen" >WORKS LIST</button>
+        <button class="tablink" onclick="openTab(event, 'current')">CURRENT PROJECTS</button>
+       </div> 
+
+      <div id="works" class="tabcontent">
+    
         <div class="item">
           <h4 class="title">Dumbfounded</h4>
           <p class="type">(2019)</p>
@@ -142,7 +95,7 @@
           <p class="instrumentation">mezzo-soprano, tenor, & harp; text by Chairil Anwar</p>
           <p class="instrumentation">mezzo-soprano, tenor, & piano; (2018 revision)</p>
           <p class="premiere">premiered 15 October 2017 by Midwest Chamber Ensemble, Lutheran Church of the Resurrection; Prairie Village, KS</p>
-          <p class="listen">link if appropriate</p>
+          <a href="https://soundcloud.com/leslee-wood/sets/tiga-puisi-chairil-anwar" target="blank">Listen on soundcloud</a>
           <br>
         </div>
         <div class="item">
@@ -150,7 +103,7 @@
           <p class="type">song cycle (2017)</p>
           <p class="instrumentation">SSAA quartet; text by Elizabeth Barrett Browning</p>
           <p class="premiere">premiered 19 May 2017 by Ignea Strata at KC United Church of Christ; Kansas City, MO</p>
-          <p class="listen">link if appropriate</p>
+          <a href="https://soundcloud.com/leslee-wood/sets/sonnets-from-the-portuguese" target="blank">Listen on soundcloud</a>
           <br>
         </div>
         <div class="item">
@@ -158,7 +111,7 @@
           <p class="type">miniatures (2016)</p>
           <p class="instrumentation">flute & clarinet in b-flat</p>
           <p class="premiere">premiered 14 May, 2017 by Violetta Duo at St. Mary's Episcopal Church; Kansas City, MO</p>
-          <p class="listen">link if appropriate</p>
+          <a href="https://soundcloud.com/leslee-wood/sets/suite-for-chignik-bay" target="blank">Listen on soundcloud</a>
           <br>
         </div>
         <div class="item">
@@ -170,7 +123,6 @@
           <!-- <p class="listen">link if appropriate</p> -->
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Morning Psalm</h4>
           <p class="type">(2016)</p>
@@ -179,16 +131,14 @@
           <!-- <p class="listen">link if appropriate</p> -->
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Summer Sang in Me</h4>
           <p class="type">(2016)</p>
           <p class="instrumentation">SATB Choir; text by Edna St. Vincent Millay</p>
           <p class="premiere">premiered 5 August 2016 by KC VITAs at Old Mission UMC; Prairie Village, KS</p>
-          <p class="listen">link if appropriate</p>
+          <a href="https://soundcloud.com/leslee-wood/summer-sang-in-me" target="blank">Listen on soundcloud</a>
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Straight on Through</h4>
           <p class="type">(2016)</p>
@@ -197,25 +147,22 @@
           <!-- <p class="listen">link if appropriate</p> -->
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Three Meditations for Maundy Thursday</h4>
           <p class="type">(2016)</p>
           <p class="instrumentation">handbell choir</p>
           <p class="premiere">premiered 1 May by Bellissimo! at St. Paul's UMC; Lenexa, KS</p>
-          <p class="listen">link if appropriate</p>
+          <a href="https://soundcloud.com/leslee-wood/sets/chants-for-maundy-thursday" target="blank">Listen on soundcloud</a>
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Expectation</h4>
           <p class="type">(2016)</p>
           <p class="instrumentation">handbell choir</p>
           <p class="premiere">premiered 1 May by Bellissimo! at St. Paul's UMC; Lenexa, KS</p>
-          <p class="listen">link if appropriate</p>
+          <a href="https://soundcloud.com/leslee-wood/expectation" target="blank">Listen on soundcloud</a>
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Dicite pusillanimes</h4>
           <p class="type">(2015)</p>
@@ -224,7 +171,6 @@
           <a class="listen" href="https://soundcloud.com/leslee-wood/dicite-pusillanimes" target="blank">Listen on Soundcloud</a>
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">The Whole Bright World Rejoices</h4>
           <p class="type">(2015)</p>
@@ -233,7 +179,6 @@
           <a class="listen" href="https://soundcloud.com/leslee-wood/the-whole-bright-world-rejoices" target="blank">Listen on Soundcloud</a>
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Peace</h4>
           <p class="type">cantata (2015)</p>
@@ -242,7 +187,6 @@
           <!-- <p class="listen">link if appropriate</p> -->
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Prayers from the Ark</h4>
           <p class="type">song cycle (2015)</p>
@@ -251,7 +195,6 @@
           <!-- <p class="listen">link if appropriate</p> -->
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Four Poems by Emily Dickinson</h4>
           <p class="type">song cycle (2015)</p>
@@ -260,7 +203,6 @@
           <a class="listen" href="https://soundcloud.com/leslee-wood/03-06-four-poems-of-emily" target="blank">Listen on Soundcloud</a>
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">Senex puerum</h4>
           <p class="type">(2014)</p>
@@ -269,7 +211,6 @@
           <!-- <p class="listen">link if appropriate</p> -->
           <br>
         </div>
-
         <div class="item">
           <h4 class="title">The Flower among the Weeds</h4>
           <p class="type">(2014)</p>
@@ -278,7 +219,6 @@
           <!-- <p class="listen">link if appropriate</p> -->
           <br>
         </div>
-
         <!-- <div class="item">
           <h4 class="title">Dumbfounded</h4>
           <p class="type">type</p>
@@ -287,7 +227,6 @@
           <p class="listen">link if appropriate</p>
           <br>
         </div> -->
-
         <!-- <div class="item">
           <h4 class="title">Dumbfounded</h4>
           <p class="type">type</p>
@@ -296,7 +235,6 @@
           <p class="listen">link if appropriate</p>
           <br>
         </div> -->
-
         <!-- <div class="item">
           <h4 class="title">Dumbfounded</h4>
           <p class="type">type</p>
@@ -305,17 +243,69 @@
           <p class="listen">link if appropriate</p>
           <br>
         </div> -->
-      </section>
+    </div>
+
+    <div id="current" class="tabcontent">
       
+      <div class="item">
+        <h4 class="title">The Trembling Giant</h4>
+        <p class="type">ballet</p>
+        <p class="instrumentation">open-instrumentation; collaboration with Municipal Ballet Company, Salt Lake City, UT</p>
+        <p class="premiere">premiere date pending</p>
+        <!-- <p class="listen">link if appropriate</p> -->
+        <br>
+      </div>
+      <div class="item">
+        <h4 class="title">Daughter of Zion</h4>
+        <p class="type">ballet (select sections)</p>
+        <p class="instrumentation">violin and piano; collaboration with Municipal Ballet Company</p>
+        <p class="premiere">premiere upcoming (September 22, 2021 in Zion National Park, Utah)</p>
+        <!-- <p class="listen">link if appropriate</p> -->
+        <br>
+      </div>
+      <div class="item">
+        <h4 class="title">Haiku</h4>
+        <p class="type">miniatures</p>
+        <p class="instrumentation">solo piano; after the poetry of Matsuo Basho, Kobayashi Issa, and Yosa Buson</p>
+        <p class="premiere">premiere upcoming (September 2021)</p>
+        <!-- <p class="listen">link if appropriate</p> -->
+        <br>
+      </div>
+      <div class="item">
+        <h4 class="title">On the Back of the Black</h4>
+        <p class="type">oratorio</p>
+        <p class="instrumentation">mezzo-soprano & tenor solo, mixed choir, Pierrot Ensemble with percussion; collaboration with KC VITAs</p>
+        <p class="premiere">premiere upcoming (August 3 & 5, 2021)</p>
+-->
+        <br>
+      </div>
+      <div class="item">
+        <h4 class="title">Isolation Meditation</h4>
+        <p class="type">song</p>
+        <p class="instrumentation">SATB Choir; commissioned by The Pembroke School, Kansas City, MO</p>
+        <p class="premiere">premiere upcoming (May 2021)</p>
+        <!-- <p class="listen">link if appropriate</p> -->
+        <br>
+      </div>
+      <div class="item">
+        <h4 class="title">Fish</h4>
+        <p class="type">song cycle</p>
+        <p class="instrumentation">medium voice and piano; text by Kyle Hunter; collaboration with KC VITAs, Kansas City, MO</p>
+        <p class="premiere">Mvt. 4 "Unloaded" premiered January 31, 2021 Kansas City via livestream. <br>Full premiere date pending.</p>
+        <!-- <p class="listen">link if appropriate</p> -->
+        <br>
+      </div>
+    
+    </div>
     </div>
 
 
     <footer class="sub-footer">
-      <h6>email - leslee.wood@gmail.com | copyright 2021 by LV Wood</h6>
+      <h6>email -</h6><a href="mailto:leslee.wood@gmail.com"> leslee.wood@gmail.com </a><h6>| copyright 2021 by LV Wood</h6>
     </footer>
   
 
-
+<!--navigation-->
   <script>
     function myFunction() {
       var x = document.getElementById("myNav");
@@ -326,6 +316,35 @@
       }
     }
     </script>
+
+    
+<!--tabs-->
+<script>
+  function openTab(evt, list) {
+// Declare all variables
+var i, tabcontent, tablink;
+
+// Get all elements with class="tabcontent" and hide them
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+  tabcontent[i].style.display = "none";
+}
+
+// Get all elements with class="tablinks" and remove the class "active"
+tablink = document.getElementsByClassName("tablink");
+for (i = 0; i < tablink.length; i++) {
+  tablink[i].className = tablink[i].className.replace(" active", "");
+}
+
+// Show the current tab, and add an "active" class to the button that opened the tab
+document.getElementById(list).style.display = "block";
+evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
 
 </body>
 </html>
