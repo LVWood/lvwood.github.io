@@ -1,77 +1,135 @@
 // Navigation Styles here
 
+
+// homepage navigation
 .header-nav {
     padding: 2%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: @off-black;
-    box-shadow: 0px 4px 3px @off-black;
-    position: static;
+    opacity: 75%;
+    width: 100%;
+    height: 100px;
+    position: absolute;
     top: 0%;
-    .nav a {
-        position: relative;
-        top: 30%;
-        font-size: 1.6rem;
-        color: @off-white;
-        text-decoration: none;
-        padding: 0 30px;
-        @media @mobile {
-            // visibility: hidden;
+    z-index: 10;
+    @media @mobile {
+        padding: 4%;
+    }   
+}
+.nav a {
+    position: relative;
+    font-size: 1.6rem;
+    color: @off-white;
+    background-color: @off-black;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.nav a:hover {
+    color: @mustard;
+    background-color: @off-black;
+}
+.nav a.active {
+    color: @light-berry;
+    background-color: @off-black;
+}
+.nav .icon {
+    display: none;
+}
+@media @mobile {
+    .nav a {display:none;}
+    .nav a.icon {
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.4rem;
         }
+}
+@media @mobile {
+    .nav.responsive {position:relative;}
+    .nav.responsive a.icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+        padding-top: 20px;
+        line-height: 1.4em;
     }
 }
 
-.design-header-nav {
+
+
+//sub page navbar
+.sub-nav {
     padding: 2%;
-    height: 15%;
-    background-color: @berry;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 4px 10px #d6d4d4;
-    .design-nav a {
-        position: relative;
-        top: 30%;
-        color: @off-white;
-        font-size: 1.6rem;
-        text-decoration: none;
-        padding: 20px 10px;
-        @media @mobile {
-            visibility: hidden;
+    align-items: center;
+    background-color: @off-black;
+    width: 100%;
+    // position: absolute;
+    z-index: 10;
+    top: 0%;
+    @media @mobile {
+        padding: 4%;
+    }   
+}
+.nav a {
+    position: relative;
+    font-size: 1.6rem;
+    color: @off-white;
+    background-color: @off-black;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.nav a:hover {
+    color: @mustard;
+    background-color: @off-black;
+}
+.nav a.active {
+    color: @light-berry;
+    background-color: @off-black;
+}
+.nav .icon {
+    display: none;
+}
+@media @mobile {
+    .nav a {display:none;}
+    .nav a.icon {
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.4rem;
         }
+}
+@media @mobile {
+    .nav.responsive {position:relative;}
+    .nav.responsive a.icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+        padding-top: 20px;
+        line-height: 1.4em;
     }
 }
 
-.music-header-nav {
-    padding: 2%;
-    height: 15%;
-    background-color: @mustard;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px 4px 10px #d6d4d4;
-    .music-nav a {
-        position: relative;
-        top: 30%;
-        color: @blackberry;
-        font-size: 1.6rem;
-        text-decoration: none;
-        padding: 0 10px;
-        @media @mobile {
-            visibility: hidden;
-        }
-    }
-}
+
 
 .initial-logo {
     .logo-style();
     color: @mustard;
-    text-decoration: none;
-    @media @mobile {
-        font-size: 2.4rem;
-    }
-}
-.initial-logo-music {
-    .logo-style();
-    color: @blackberry;
     text-decoration: none;
     @media @mobile {
         font-size: 2.4rem;
