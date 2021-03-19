@@ -1,6 +1,6 @@
 //styling for press kit page
 
-.bio-section {
+.press-section {
     // border: 1px solid @berry;
     margin: 2% 10% 5% 10%;
     @media @mobile {
@@ -44,4 +44,43 @@
     padding: 5%;
     text-align: left;
     background-color: #f8f8f8
+}
+
+.list-heading {
+    background-color: @berry;
+    color: @off-white;
+    padding: 10px;  
+}
+
+.photo-container {
+    display: flex;
+}
+
+.photo-section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    img {
+        width: 100%;
+        height: auto;
+        padding: 5px 2px;
+    }
+    .downloads {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        a {
+            text-decoration: none;
+            color: @light-berry;
+            font-weight: bold;
+            line-height: 2rem;
+        }
+        @media @tablet {
+            font-size: 1rem;
+        }
+        @media @mobile {
+            font-size: .8rem;
+        }
+        
+    }
 }
