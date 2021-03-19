@@ -455,11 +455,6 @@ footer {
     margin: 3% 5%;
   }
 }
-.list-heading {
-  background-color: #66303b;
-  color: #F9F2F3;
-  padding: 10px 5%;
-}
 .item {
   padding: 8px 5%;
 }
@@ -475,11 +470,11 @@ footer {
 .item a {
   font-size: 1.4rem;
 }
-.bio-section {
+.press-section {
   margin: 2% 10% 5% 10%;
 }
 @media (max-width: 600px) {
-  .bio-section {
+  .press-section {
     margin: 3% 5%;
   }
 }
@@ -522,4 +517,43 @@ footer {
   padding: 5%;
   text-align: left;
   background-color: #f8f8f8;
+}
+.list-heading {
+  background-color: #66303b;
+  color: #F9F2F3;
+  padding: 10px;
+}
+.photo-container {
+  display: flex;
+}
+.photo-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.photo-section img {
+  width: 100%;
+  height: auto;
+  padding: 5px 2px;
+}
+.photo-section .downloads {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+.photo-section .downloads a {
+  text-decoration: none;
+  color: #9A4859;
+  font-weight: bold;
+  line-height: 2rem;
+}
+@media (max-width: 1000px) {
+  .photo-section .downloads {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .photo-section .downloads {
+    font-size: 0.8rem;
+  }
 }
