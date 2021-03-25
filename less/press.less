@@ -56,6 +56,10 @@
 .photo-container {
     display: flex;
     align-items: space-between;
+    max-width:100%;
+    @media @mobile {
+        flex-direction: column;
+    }
 }
 
 .photo-section {
@@ -63,10 +67,17 @@
     display: flex;
     flex-direction: column;
     padding: 10px 0;
-    img {
+    @media @mobile {
+        flex-direction: row;
+    }
+    .thumbnail {
         width: 100%;
         height: auto;
         padding: 5px 2px;
+        @media @mobile {
+            width: 50%;
+            padding-right: 20px;
+        }
     }
     .downloads {
         display: flex;
@@ -83,11 +94,22 @@
             line-height: 1.5rem;
         }
         @media @mobile {
-            font-size: .8rem;
-            line-height: 1rem;
-        }
-        
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }   
     }
+}
+.downloads p {
+    @media @tablet {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    @media @mobile {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        text-align: left;
+        font-weight: bold;
+    }  
 }
 
 .modal {

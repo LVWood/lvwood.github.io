@@ -442,10 +442,13 @@ footer {
 .download {
   padding: 50px 10% 0px 10%;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 .download a {
   color: #333132;
   font-size: 1.4rem;
+  line-height: 2;
 }
 .worksList {
   margin: 10px 10% 5% 10%;
@@ -526,16 +529,33 @@ footer {
 .photo-container {
   display: flex;
   align-items: space-between;
+  max-width: 100%;
+}
+@media (max-width: 600px) {
+  .photo-container {
+    flex-direction: column;
+  }
 }
 .photo-section {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
 }
-.photo-section img {
+@media (max-width: 600px) {
+  .photo-section {
+    flex-direction: row;
+  }
+}
+.photo-section .thumbnail {
   width: 100%;
   height: auto;
   padding: 5px 2px;
+}
+@media (max-width: 600px) {
+  .photo-section .thumbnail {
+    width: 50%;
+    padding-right: 20px;
+  }
 }
 .photo-section .downloads {
   display: flex;
@@ -556,8 +576,22 @@ footer {
 }
 @media (max-width: 600px) {
   .photo-section .downloads {
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+@media (max-width: 1000px) {
+  .downloads p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .downloads p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: left;
+    font-weight: bold;
   }
 }
 .modal {

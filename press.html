@@ -63,7 +63,7 @@
     <div class="photo-container">
 
       <div class="photo-section" id="headshot1">
-        <img src="documents/LVWood1small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Black and white headshot of LV Wood looking toward the camera in front of a brick wall">
+        <img src="documents/LVWood1small.jpg" onclick="openModal();currentSlide(1)" class="thumbnail" alt="Black and white headshot of LV Wood looking toward the camera in front of a brick wall">
         <div class="downloads">
           <p>Downloads:</p><br>
           <a href="documents/LVWood1small.jpg" download>LVW1 (small - 548kb)</a><br>
@@ -72,7 +72,7 @@
         </div>
       </div>
       <div class="photo-section" id="headshot2">
-        <img src="documents/LVWood2small.jpg" onclick="openModal();currentSlide(2)" class="hover" alt="Color headshot of LV Wood looking away from the camera in front of a brick wall">
+        <img src="documents/LVWood2small.jpg" onclick="openModal();currentSlide(2)" class="thumbnail" alt="Color headshot of LV Wood looking away from the camera in front of a brick wall">
         <div class="downloads">
           <p>Downloads:</p><br>
           <a href="documents/LVWood2small.jpg" download>LVW2 (small - 1.3mb)</a><br>
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="photo-section" id="headshot3">
-        <img src="documents/LVWood3small.jpg" onclick="openModal();currentSlide(3)" class="hover" alt="Color full-length photo of LV Wood in outdoor industrial lot with shippping containers in the distant background">
+        <img src="documents/LVWood3small.jpg" onclick="openModal();currentSlide(3)" class="thumbnail" alt="Color full-length photo of LV Wood in outdoor industrial lot with shippping containers in the distant background">
         <div class="downloads">
           <p>Downloads:</p><br>
           <a href="documents/LVWood3small.jpg" download>LVW3 (small - 1.2mb)</a><br>
@@ -90,7 +90,7 @@
         </div>
       </div>
       <div class="photo-section" id="headshot4">
-        <img src="documents/LVWood4small.jpg" onclick="openModal();currentSlide(4)" class="hover" alt="Color headshot of LV Wood semi-casual leaning against a rock wall">
+        <img src="documents/LVWood4small.jpg" onclick="openModal();currentSlide(4)" class="thumbnail" alt="Color headshot of LV Wood semi-casual leaning against a rock wall">
         <div class="downloads">
           <p>Downloads:</p><br>
           <a href="documents/LVWood4small.jpg" download>LVW4 (small - 886kb)</a><br>
@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="photo-section" id="headshot5">
-        <img src="documents/LVWood5small.jpg" onclick="openModal();currentSlide(5)" class="hover" alt="Color headshot of LV Wood standing in front of graffiti art">
+        <img src="documents/LVWood5small.jpg" onclick="openModal();currentSlide(5)" class="thumbnail" alt="Color headshot of LV Wood standing in front of graffiti art">
         <div class="downloads">
           <p>Downloads:</p><br>
           <a href="documents/LVWood5small.jpg" download>LVW5 (small - 653kb)</a><br>
@@ -226,7 +226,7 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += "active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
