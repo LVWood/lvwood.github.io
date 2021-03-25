@@ -442,10 +442,13 @@ footer {
 .download {
   padding: 50px 10% 0px 10%;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 .download a {
   color: #333132;
   font-size: 1.4rem;
+  line-height: 2;
 }
 .worksList {
   margin: 10px 10% 5% 10%;
