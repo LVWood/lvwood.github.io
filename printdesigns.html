@@ -29,8 +29,83 @@
       </header>
    
     <div class="portfolio-container">
+          <H3>PRINT & WEB MEDIA DESIGNS</H3>
+          
+            <div class="tab">
+             <button class="tablink" onclick="openTab(event, 'serenade')" id="defaultOpen" >SERENADE</button>
+             <button class="tablink" onclick="openTab(event, 'agony&ecstasy')">AGONY & ECSTASY</button>
+             <button class="tablink" onclick="openTab(event, 'lubranocats')">LUBRANO CATALOGUES</button>
+             <button class="tablink" onclick="openTab(event, 'vitas')">KC VITAs</button>
+            </div> 
+          
+            <div id="serenade" class="tabcontent">
+                <div class="portfolio-item-container">
+                    <img class="print" src="images/portfolio/ku serenade.png" alt="magazine cover showing backstage view of a conductor directing an orchestra in rehearsal">
+                    <div class="item-intro">
+                        <h4>Graphic Design & Layout</h4>
+                        <h5>Serenade Magazine</h5>
+                        <br>
+                        <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+                        <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+                        <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+                    </div>
+                    <div>
+  
+                    </div>
+                </div>
+            </div>
+         
+          <div id="agony&ecstasy" class="tabcontent">
+            <div class="portfolio-item-container">
+              <img class="print" src="images/portfolio/Artboard 1@2x.png" alt="stylized rendering of Bernini's sculpture 'the Agony  of Saint Teresa' overexposed in white with pink and red shadows">
+              <div class="item-intro">
+                  <h4>Marketing Designs</h4>
+                  <h5>Agony & Ecstasy - Ignea Strata Program</h5>
+                  <br>
+                  <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+                  <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+                  <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+              </div>
+              <div>
 
+              </div>
+            </div>
+          </div>
+
+       <div id="lubranocats" class="tabcontent">
+        <div class="portfolio-item-container">
+            <img src="images/portfolio/Mod 1 cover.png" alt="Catalogue cover in shades of gray with modern typography and a swirling art-deco cover image">
+            <div class="item-intro">
+                <h4>Design, Layout & Photography</h4>
+                <h5>J&J Lubrano Sales Catalogues</h5>
+                <br>
+                <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+                <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+                <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+   </div>
+
+   <div id="vitas" class="tabcontent">
+    <div class="portfolio-item-container">
+        <img src="images/portfolio/2018 album cover.PNG" alt="album cover with black and white tree silhouettes">
+        <div class="item-intro">
+            <h4>Album Design</h4>
+            <h5>KC VITAs</h5>
+            <br>
+            <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+            <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+            <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+        </div>
+        <div>
+
+        </div>
+      </div>
     </div>
+   </div>
   
   <footer class="sub-footer">
     <h6>email -</h6><a href="mailto:leslee.wood@gmail.com"> leslee.wood@gmail.com </a><h6>| copyright 2021 by LV Wood</h6>
@@ -49,6 +124,32 @@
     }
   }
   </script>
+
+<script>
+    function openTab(evt, length) {
+  // Declare all variables
+  var i, tabcontent, tablink;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablink = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablink.length; i++) {
+    tablink[i].className = tablink[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(length).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 </html>

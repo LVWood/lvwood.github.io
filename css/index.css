@@ -751,7 +751,7 @@ img {
 }
 @media (max-width: 600px) {
   .portfolio-container .tablink {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 .portfolio-item-container {
@@ -769,5 +769,6 @@ img {
 @media (max-width: 1000px) {
   .portfolio-item-container img {
     width: 100%;
+    object-fit: scale-down;
   }
 }

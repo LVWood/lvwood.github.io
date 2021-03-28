@@ -29,8 +29,84 @@
       </header>
    
     <div class="portfolio-container">
+          <H3>ADDITIONAL PROJECTS</H3>
+          
+            <div class="tab">
+             <button class="tablink" onclick="openTab(event, 'vesalius')" id="defaultOpen" >UI STUDIES</button>
+             <button class="tablink" onclick="openTab(event, 'shadowgirl')">PHOTOGRAPHY & EDITING</button>
+             <button class="tablink" onclick="openTab(event, 'habitat')">CONCEPTUAL DESIGNS</button>
+             <button class="tablink" onclick="openTab(event, 'lookbook')">MARKETING</button>
+            </div> 
+          
+            <div id="vesalius" class="tabcontent">
+                <div class="portfolio-item-container">
+                    <img class="print" src="images/portfolio/faculte de medecin (1).png" alt="design for mobile payment screens featuring woodcut of a skeleton by Vesalius">
+                    <div class="item-intro">
+                        <h4>UI Design Studies</h4>
+                        <h5>Educational Projects</h5>
+                        <br>
+                        <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+                        <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+                        <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+                    </div>
+                    <div>
+  
+                    </div>
+                </div>
+            </div>
+         
+          <div id="shadowgirl" class="tabcontent">
+            <div class="portfolio-item-container">
+              <img class="print" src="images/portfolio/layered mountain face.png" alt="stylized photograph of a woman's face in profile superimposed transparently over mountainous landscape">
+              <div class="item-intro">
+                  <h4>Photography & Photo Editing</h4>
+                  <h5></h5>
+                  <br>
+                  <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+                  <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+                  <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+              </div>
+              <div>
 
+              </div>
+            </div>
+          </div>
+
+       <div id="habitat" class="tabcontent">
+        <div class="portfolio-item-container">
+            <img src="images/portfolio/HH graphic.png" alt="Banner image in oranges and pinks with the words Habitat Home with shadows cast by the letters' in the shapes of houses">
+            <div class="item-intro">
+                <h4>Design Concepts for Specific Music Programs</h4>
+                <h5>KC VITAs, Ignea Strata, and KU School of Music</h5>
+                <br>
+                <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+                <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+                <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+            </div>
+        </div>
+            <div>
+
+            </div>
+        </div>
+  
+
+   <div id="lookbook" class="tabcontent">
+    <div class="portfolio-item-container">
+        <img src="images/portfolio/lookbook/lookbook cover.png" alt="square brochure cover with cover image of aerial photo of a small choir singing in a circle">
+        <div class="item-intro">
+            <h4>Advertising</h4>
+            <h5>KU School of Music</h5>
+            <br>
+            <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+            <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+            <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+        </div>
+        <div>
+
+        </div>
+      </div>
     </div>
+   </div>
   
   <footer class="sub-footer">
     <h6>email -</h6><a href="mailto:leslee.wood@gmail.com"> leslee.wood@gmail.com </a><h6>| copyright 2021 by LV Wood</h6>
@@ -49,6 +125,32 @@
     }
   }
   </script>
+
+<script>
+    function openTab(evt, length) {
+  // Declare all variables
+  var i, tabcontent, tablink;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablink = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablink.length; i++) {
+    tablink[i].className = tablink[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(length).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 </html>
