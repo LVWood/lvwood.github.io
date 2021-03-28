@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leslee Wood</title>
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <!--icon library for hamburgers-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="sub-nav">
+        <a href="index.html" class="initial-logo" >LW</a>
+        <nav class="nav" id="myNav">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="works.html" >WORKS</a> 
+          <a href="press.html" >PRESS KIT</a>
+          <a href="design.html">DESIGN</a>
+    
+        </nav>   
+      </header>
+   
+    <div class="portfolio-container">
+          <H3>USER INTERFACE DESIGNS</H3>
+          
+            <div class="tab">
+             <button class="tablink" onclick="openTab(event, 'lubrano')" id="defaultOpen" >LUBRANO</button>
+             <button class="tablink" onclick="openTab(event, 'igstra')">IGNEA STRATA</button>
+             <button class="tablink" onclick="openTab(event, 'elkmeadow')">ELK MEADOW</button>
+             <button class="tablink" onclick="openTab(event, 'ruckus')">RUCKUS</button>
+            </div> 
+          
+            <div id="lubrano" class="tabcontent">
+                <div class="portfolio-item-container">
+                    <img src="images/portfolio/lubrano UI.png" alt="open laptop showing homepage for music antiquarian website">
+                    <div class="item-intro">
+                        <h4>Website Redesign</h4>
+                        <h5>J&J Lubrano Music Antiquarians</h5>
+                        <br>
+                        <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+                        <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+                        <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+                    </div>
+                    <div>
+  
+                    </div>
+                </div>
+           </div>
+         
+            <div id="long" class="tabcontent">
+             <h4>Long Composition Bio (316 words)</h4><br>
+             <p>Described as “haunting, sensual, and earthy,” Leslee Wood’s music draws inspiration from the sounds of the natural world and from humankind’s tenuous relationships with the earth and with each other. Drawing inspiration from a childhood spent in rural America, Wood’s incisive music evokes both the constant hum of life and the yawning silence of raw nature. <i>Suite for Chignik Bay</i>, a collection of woodwind miniatures, is an intimate picture of Wood’s primary school years spent in bush Alaska, by turns playful, frightening, and poignant. A current project, <i>Pando</i> is a collaboration with Municipal Ballet of Salt Lake City, depicting through music and dance the epochs-long life of one of Earth’s oldest and largest living organisms, an 80,000-year-old grove of quaking aspen in central Utah. Wood’s inspiration comes not only from nature, but from humanity’s relationship with the world and with each other. Conflict, fear, love, pain, loss, and redemption are persistent themes in her work, which has confronted current issues from gun-violence (<i>We Must Like It</i>, 2018) to sexual assault (<i>The Safest Space</i>, 2017), and climate change (<i>On the Back of the Black</i>, 2019). </p><br>   
+             <p>Wood holds a Masters degree in musicology and her scholarship focuses on the socio-musical practices of medieval France. As both a performer and scholar, her affinity for the musical practices of the middle-ages lends a timeless quality to her compositions. Chant, improvisation, sophisticated rhythmic counterpoint, and early contrapuntal techniques combine with colorful, searing harmonies and contemporary forms.</p><br>
+             <p>Wood has received awards from the National Endowment for the Humanities, the International Alliance for Women in Music and the Society for Composers Inc. She is the founder and artistic director of vocal ensemble Ignea Strata, which specializes in both early and contemporary vocal music. Wood currently serves as Composer-in-Residence for Kansas City-based new music ensemble KC VITAs and has collaborated with the group as both a singer and composer since its inception in 2015. (316 words) </p>
+            </div>
+         
+            <!-- <div id="performer" class="tabcontent">
+             <h4>Performance Bio</h4><br>
+             <p>Coming soon </p><br>
+            </div> -->
+           </section> 
+          
+          <section>
+              
+          </section>
+
+  
+    </div>
+  
+  <footer class="sub-footer">
+    <h6>email -</h6><a href="mailto:leslee.wood@gmail.com"> leslee.wood@gmail.com </a><h6>| copyright 2021 by LV Wood</h6>
+  </footer>
+
+
+
+  
+<script>
+  function myFunction() {
+    var x = document.getElementById("myNav");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  }
+  </script>
+
+<script>
+    function openTab(evt, length) {
+  // Declare all variables
+  var i, tabcontent, tablink;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablink = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablink.length; i++) {
+    tablink[i].className = tablink[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(length).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

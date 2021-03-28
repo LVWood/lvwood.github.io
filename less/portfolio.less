@@ -1,0 +1,33 @@
+
+.portfolio-container {
+    width: 80%;
+    margin: 50px 10%;
+}
+.tab {
+    width: 100%;
+}
+.portfolio-container .tablink {
+    width: 25%;
+    height: 90px;
+    @media @tablet {
+        height: 70px;
+        font-size: 1.6rem;
+    }
+    @media @mobile {
+        font-size: 1.4rem;
+    }
+}
+
+.portfolio-item-container {
+    display: flex;
+    align-items: space between;
+    @media @tablet {
+        display: block;
+        }
+    img {
+        margin-right: 20px;
+        @media @tablet {
+            width: 100%;
+        }
+    }
+}
