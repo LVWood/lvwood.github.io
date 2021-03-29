@@ -598,7 +598,6 @@ footer {
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 1200px;
 }
 .close {
   color: #CCC5C6;
@@ -621,7 +620,7 @@ footer {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -643,7 +642,7 @@ footer {
   color: #F9F2F3;
   font-size: 1.2rem;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   top: 0;
 }
 img.demo {
@@ -844,6 +843,8 @@ img.demo {
   }
 }
 .moreinfo-container .photo-section {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   border: 1px solid #9A9596;
   margin: 10px;
@@ -857,12 +858,23 @@ img.demo {
     margin-right: auto;
   }
 }
+.moreinfo-container .photocaption {
+  text-align: center;
+}
 .mySlides img {
   object-fit: contain;
+  height: 100%;
 }
 .modalcaption {
   color: #F9F2F3;
   position: relative;
   text-align: center;
   padding-top: 20px;
+}
+.moreinfo-container .basiccaption {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  text-align: center;
 }

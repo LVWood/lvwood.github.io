@@ -76,6 +76,7 @@
     @media @tablet {
         flex-direction: column;
     }
+
     .row {
         width: 33%;
         display: flex;
@@ -91,7 +92,10 @@
             }
         }
     }
+    
     .photo-section {
+        display: flex;
+        flex-direction: column;
         width: 90%;
         border: 1px solid @mid-gray;
         margin: 10px;
@@ -103,9 +107,14 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .photocaption {
+            text-align: center;
+        }
     }
+
 .mySlides img {
     object-fit: contain;
+    height: 100%;
 }
 
 .modalcaption {
@@ -116,3 +125,10 @@
 
 }
 
+.moreinfo-container .basiccaption {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}

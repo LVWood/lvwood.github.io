@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="sub-nav">
+  <header class="sub-nav">
         <a href="index.html" class="initial-logo" >LW</a>
         <nav class="nav" id="myNav">
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -26,139 +26,153 @@
           <a href="design.html">DESIGN PORTFOLIO</a>
     
         </nav>   
-      </header>
+  </header>
    
-    <div class="portfolio-container">
-      <H3>USER INTERFACE DESIGNS</H3>
-
-      <div class="back">
+  <div class="portfolio-container">
+    <H3>USER INTERFACE DESIGNS</H3>
+    <div class="back">
         <a href="design.html" > < BACK</a>
-      </div> <!--back-->
+    </div> <!--back-->
           
-      <div class="tab">
+    <div class="tab">
         <button class="tablink" onclick="openTab(event, 'lubrano')" id="defaultOpen" >LUBRANO</button>
         <button class="tablink" onclick="openTab(event, 'igstra')" >IGNEA STRATA</button>
         <button class="tablink" onclick="openTab(event, 'elkmeadow')" >ELK MEADOW</button>
         <button class="tablink" onclick="openTab(event, 'ruckus')" >RUCKUS</button>
-      </div> 
+    </div> 
           
-      <div id="lubrano" class="tabcontent">
-        <div class="portfolio-item-container">
-          <img src="images/portfolio/lubrano UI.png" alt="open laptop showing homepage for music antiquarian website">
-          <div class="item-intro">
-              <h3>Website Redesign</h3>
-              <h4>J&J Lubrano Music Antiquarians</h4>
-              <br>
-              <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
-              <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
-          </div>
+    <div id="lubrano" class="tabcontent">
+      <div class="portfolio-item-container">
+        <img src="images/portfolio/lubrano UI.png" alt="open laptop showing homepage for music antiquarian website">
+        <div class="item-intro">
+            <h3>Website Redesign</h3>
+            <h4>J&J Lubrano Music Antiquarians</h4>
+            <br>
+            <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+            <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
         </div>
-        <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+      </div>
+      <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+
+      <div class="moreinfo-container">
+        <div class='row'>
+          <div class="photo-section" >
+            <img src="images/portfolio/LUBRANO site redesign/logo compare.png" onclick="openModal();currentSlide(1)" class="thumbnail" alt="before and after comparison of a logo, the older is a fuzzy image of a musical instrument centered in a burgundy frame with a taupe background. The newer shows the instrument as a crisp vector without a frame against a burgundy background.">
+            <p class="photocaption">Before & After: Logo</p>
+          </div>
+          <div class="photo-section" >
+            <img src="images/portfolio/LUBRANO site redesign/color compare.png" onclick="openModal();currentSlide(2)" class="thumbnail" alt="comparison of two color charts, one with burgundy and olive against an off-white background, the other burgundy, olive, and taupe against a beige background.">
+            <p class="photocaption">Before & After: Brand Colors</p>
+          </div>
+        </div> <!--row-->
+        <div class="row">
+          <div class="photo-section"  >
+            <img src="images/portfolio/LUBRANO site redesign/tile compare.png" onclick="openModal();currentSlide(3)" class="thumbnail" alt="comparison of two web tiles, one a somewhat fuzzy photo collage of book covers and spines, the other a single photo of a book open on a table">
+            <p class="photocaption">Before & After: Tiles</p>
+          </div>
+          <div class="photo-section" >
+            <img src="images/portfolio/LUBRANO site redesign/homepage.png" onclick="openModal();currentSlide(4)" class="thumbnail" alt="before and after comparison of desktop homepages. The older uses the unfocused logo, color scheme with beige background, and photo collage category tiles. The redesign has a crisp off-white background, uses the new vector logo and single-image category tiles.">
+            <p class="photocaption">Before & After: Home</p>
+          </div>
+        </div> <!--row-->
+        <div class="row">
+          <div class="photo-section" >
+            <img src="images/portfolio/LUBRANO site redesign/inventory page.png" onclick="openModal();currentSlide(6)" class="thumbnail" alt="before and after comparison on inventory page. The older version shows inventory images in a grid and the older color scheme, the newer arranges items in a list with textual explanations and features the updated color scheme.">
+            <p class="photocaption">Before & After: Inventory Page</p>
+          </div>
+          <div class="photo-section" >
+            <img src="images/portfolio/LUBRANO site redesign/item page.png" onclick="openModal();currentSlide(5)" class="thumbnail" alt="before and after comparison of item page showing large image of book and several paragraphs of descriptive text. The older version uses the old color scheme without much typographic variation. The newer version has updated colors, the same basic layout, but has greater textual clarity through the use of subtle typographic size, weight, and style variation.">
+            <p class="photocaption">Before & After: Item Page</p>
+          </div>
+        </div> <!--row-->
+      </div> <!--photo container-->
+          
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span> 
+        <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="images/portfolio/LUBRANO site redesign/logo compare.png" style="width:100%">
+              <p class="modalcaption">The updated logo replaced a low-resolution, non-scalable lyre design with a clean vector version and updated colors and typography.</p>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="images/portfolio/LUBRANO site redesign/color compare.png" style="width:100%">
+              <p class="modalcaption">While maintaining the existing brand colors, the new design (top) discards low-contrast color pairings and alters color ratios.</p>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="images/portfolio/LUBRANO site redesign/tile compare.png" style="width:100%">
+              <p class="modalcaption">The orginal homepage relied on image collages for category tiles. In the updated version, a single, striking image and larger, updated text represents each category. </p>
+            </div> 
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="images/portfolio/LUBRANO site redesign/homepage.png" style="width:100%">
+              <p class="modalcaption">The redesigned homepage has greater color contrast, a more striking layout with clearer imagery, and a clean, crisp logo.</p>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="images/portfolio/LUBRANO site redesign/inventory page.png" style="width:100%">
+              <p class="modalcaption">Maintaining the same basic structure, the redesigned inventory page defaults to a list display, enabling more textual descriptions that provide meaningful, at-a-glance information essential to the antiquarian collector.</p>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="images/portfolio/LUBRANO site redesign/item page.png" style="width:100%">
+              <p class="modalcaption">The redesigned item page makes better use of type hierarchy in order to parse different information types (publication, edition, binding, etc) more quickly</p>
+            </div>
+        </div> <!--modal-content-->
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+
+      </div> <!--modal-->
+    </div> <!--tabcontent-->
+
+    <div id="igstra" class="tabcontent">
+        <div class="portfolio-item-container">
+          <img src="images/portfolio/Igstra UI.png" alt="open laptop showing homepage for music ensemble with four women in a deserted industrial street">
+          <div class="item-intro">
+            <h3>Branding & Site Design</h3>
+            <h4>Ignea Strata</h4>
+            <br>
+            <p>THE BRIEF: design and build a fully responsive website for a new, independent music ensemble. The site needs to establish the group's personality and aesthetic and provide a space for marketing and promotional materials.</p>
+            <br><p>REWARDS: with beautiful photo assets and a sophisticated aesthetic, the site lent itself to a simple, clean design with plenty of room to develop over time.</p>
+            <br><p>CHALLENGES: wide-angle photos with the subjects spaced far apart was lovely for landscape designs, but required some creative solutions to present the images effectively for mobile.</p>
+          </div> <!--item-intro-->
+        </div> <!--portfolio-item-container-->
 
         <div class="moreinfo-container">
-          <div class='row'>
-            <div class="photo-section" >
-              <img src="images/portfolio/LUBRANO site redesign/compare/logo compare.png" onclick="openModal();currentSlide(1)" class="thumbnail" alt="Color headshot of LV Wood looking away from the camera in front of a brick wall">
-            </div>
-            <div class="photo-section" >
-              <img src="images/portfolio/LUBRANO site redesign/compare/color compare.png" onclick="openModal();currentSlide(2)" class="thumbnail" alt="Black and white headshot of LV Wood looking toward the camera in front of a brick wall">
-            </div>
-          </div> <!--row-->
-          <div class="row">
-            <div class="photo-section"  >
-              <img src="images/portfolio/LUBRANO site redesign/compare/tile compare.png" onclick="openModal();currentSlide(3)" class="thumbnail" alt="Color full-length photo of LV Wood in outdoor industrial lot with shippping containers in the distant background">
-            </div>
-            <div class="photo-section" >
-              <img src="images/portfolio/LUBRANO site redesign/Lubrano/homepage.png" onclick="openModal();currentSlide(4)" class="thumbnail" alt="Black and white headshot of LV Wood looking toward the camera in front of a brick wall">
-            </div>
-          </div> <!--row-->
-          <div class="row">
-            <div class="photo-section" >
-              <img src="images/portfolio/LUBRANO site redesign/Lubrano/item page.png" onclick="openModal();currentSlide(5)" class="thumbnail" alt="Color full-length photo of LV Wood in outdoor industrial lot with shippping containers in the distant background">
-            </div>
-            <div class="photo-section" >
-              <img src="images/portfolio/LUBRANO site redesign/Lubrano/inventory page.png" onclick="openModal();currentSlide(6)" class="thumbnail" alt="Color headshot of LV Wood looking away from the camera in front of a brick wall">
-            </div>
-          </div> <!--row-->
-        </div> <!--photo container-->
-            
-        <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span> 
-          <div class="modal-content">
-              <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="images/portfolio/LUBRANO site redesign/compare/logo compare.png" style="width:100%">
-                <p class="modalcaption">Before & After: Logo</p>
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">2 / 6</div>
-                <img src="images/portfolio/LUBRANO site redesign/compare/color compare.png" style="width:100%">
-                <p class="modalcaption">After (top) & Before (bottom): Brand Color Ratios</p>
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">3 / 6</div>
-                <img src="images/portfolio/LUBRANO site redesign/compare/tile compare.png" style="width:100%">
-                <p class="modalcaption">Before & After: Home page category tiles</p>
-              </div> 
-              <div class="mySlides">
-                <div class="numbertext">4 / 6</div>
-                <img src="images/portfolio/LUBRANO site redesign/Lubrano/homepage.png" style="width:100%">
-                <p class="modalcaption">Before & After: HOME</p>
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">5 / 6</div>
-                <img src="images/portfolio/LUBRANO site redesign/Lubrano/inventory page.png" style="width:100%">
-                <p class="modalcaption">Before & After: INVENTORY PAGE</p>
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">6 / 6</div>
-                <img src="images/portfolio/LUBRANO site redesign/Lubrano/item page.png" style="width:100%">
-                <p class="modalcaption">Before & After: ITEM PAGE</p>
-              </div>
-          </div> <!--modal-content-->
           
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-          <div class="caption-container">
-            <p id="caption">here is a caption</p>
-          </div>
-        </div> <!--modal-->
+            <div class="photo-section" >
+              <img src="images/portfolio/IGSTRA ui design/home mobile.png" alt="">
+              <p class="basiccaption">The mobile version stacks the animated banner text.</p>
+            </div>
+            <div class="photo-section"  >
+              <img src="images/portfolio/IGSTRA ui design/about desktop.png" alt="">
+              <p class="basiccaption">The desktop about page features a wide-angle shot of the ensemble with parallax scrolling.</p>
+            </div>
+            <div class="photo-section" >
+              <img src="images/portfolio/IGSTRA ui design/about mobile.png" alt="">
+              <p class="basiccaption">In the mobile version, parallax is disabled and the wide-angle image is cropped into two sections featuring closeups of the singers.</p>
+            </div>
+        </div> <!--moreinfo-container-->
       </div> <!--tabcontent-->
-         
-          <div id="igstra" class="tabcontent">
-            <div class="portfolio-item-container">
-              <img src="images/portfolio/Igstra UI.png" alt="open laptop showing homepage for music ensemble with four women in a deserted industrial street">
-              <div class="item-intro">
-                  <h3>Branding & Site Design</h3>
-                  <h4>Ignea Strata</h4>
-                  <br>
-                  <p>THE BRIEF: design and build a fully responsive website for a new, independent music ensemble. The site needs to establish the group's personality and aesthetic and provide a space for marketing and promotional materials.</p>
-                  <br><p>REWARDS: with beautiful photo assets and a sophisticated aesthetic, the site lent itself to a simple, clean design with plenty of room to develop over time.</p>
-                  <br><p>CHALLENGES: wide-angle photos with the subjects spaced far apart was lovely for landscape designs, but required some creative solutions to present the images effectively for mobile.</p>
-              </div>
-              <div>
-
-              </div>
-            </div>
-          </div>
-
-       <div id="elkmeadow" class="tabcontent">
-        <div class="portfolio-item-container">
-            <img src="images/portfolio/Elk Meadows Inn.png" alt="open laptop showing homepage for rural resort with image overlooking a desert canyon and river">
-            <div class="item-intro">
-                <h3>Photography & Website Design</h3>
-                <h4>Elk Meadow Inn</h4>
-                <br>
-                <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
-                <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
-                <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
-            </div>
-            <div>
+              
+    <div id="elkmeadow" class="tabcontent">
+    <div class="portfolio-item-container">
+        <img src="images/portfolio/Elk Meadows Inn.png" alt="open laptop showing homepage for rural resort with image overlooking a desert canyon and river">
+        <div class="item-intro">
+            <h3>Photography & Website Design</h3>
+            <h4>Elk Meadow Inn</h4>
+            <br>
+            <p>Site under construction. More information coming soon.
+        </div>
+        <div>
 
             </div>
         </div>
-   </div>
+   </div> <!--tabcontent-->
 
    <div id="ruckus" class="tabcontent">
     <div class="portfolio-item-container">
@@ -167,29 +181,18 @@
             <h3>Branding & Site Design</h3>
             <h4>Ruckus Music Publishing</h4>
             <br>
-            <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
-            <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
-            <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+            <p>Site under construction. More information coming soon. </p>
         </div>
         <div>
 
         </div>
     </div>
-</div>
+</div> <!--tabcontent-->
          
-            <!-- <div id="performer" class="tabcontent">
-             <h4>Performance Bio</h4><br>
-             <p>Coming soon </p><br>
-            </div> -->
-           </section> 
           
-          <section>
-              
-          </section>
 
-  
-    </div>
-  
+  </div> <!--portfolio-container-->
+
   <footer class="sub-footer">
     <h6>email -</h6><a href="mailto:leslee.wood@gmail.com"> leslee.wood@gmail.com </a><h6>| copyright 2021 by LV Wood</h6>
   </footer>
