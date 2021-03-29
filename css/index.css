@@ -809,6 +809,12 @@ img.demo {
 .port-photo-container .photocaption {
   text-align: center;
 }
+.port-photo-container .video-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
 .mySlides img {
   max-width: 80%;
   margin: 0 10%;
