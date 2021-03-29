@@ -33,34 +33,63 @@
         <a href="design.html" > < BACK</a>
     </div> <!--back-->
 
+    <div class="portfolio-page-header">
+      <h3 class="portfolio-heading">Site Design - Ignea Strata</h3>
+    </div>
+
     <div class="portfolio-item-container">
-        <img src="images/portfolio/Igstra UI.png" alt="open laptop showing homepage for music ensemble with four women in a deserted industrial street">
+        <img class="portfolio-header-img" src="images/portfolio/Igstra UI.png" alt="open laptop showing homepage for music ensemble with four women in a deserted industrial street">
         <div class="item-intro">
-          <h3>Branding & Site Design</h3>
-          <h4>Ignea Strata</h4>
-          <br>
           <p>THE BRIEF: design and build a fully responsive website for a new, independent music ensemble. The site needs to establish the group's personality and aesthetic and provide a space for marketing and promotional materials.</p>
           <br><p>REWARDS: with beautiful photo assets and a sophisticated aesthetic, the site lent itself to a simple, clean design with plenty of room to develop over time.</p>
           <br><p>CHALLENGES: wide-angle photos with the subjects spaced far apart was lovely for landscape designs, but required some creative solutions to present the images effectively for mobile.</p>
+          <div class="design-link"><a  href="https://lesleewood.editorx.io/ignea-strata">View live site here</a></div>
+          
         </div> <!--item-intro-->
+       
       </div> <!--portfolio-item-container-->
 
-      <div class="moreinfo-container">
-        
-          <div class="photo-section" >
-            <img src="images/portfolio/IGSTRA ui design/home mobile.png" alt="">
-            <p class="basiccaption">The mobile version stacks the animated banner text.</p>
-          </div>
-          <div class="photo-section"  >
-            <img src="images/portfolio/IGSTRA ui design/about desktop.png" alt="">
-            <p class="basiccaption">The desktop about page features a wide-angle shot of the ensemble with parallax scrolling.</p>
-          </div>
-          <div class="photo-section" >
-            <img src="images/portfolio/IGSTRA ui design/about mobile.png" alt="">
-            <p class="basiccaption">In the mobile version, parallax is disabled and the wide-angle image is cropped into two sections featuring closeups of the singers.</p>
-          </div>
-      </div> <!--moreinfo-container-->
+      <div class="port-photo-container">
 
+          <div class="port-photo-section" >
+            <img class="thumbnail" src="images/portfolio/IGSTRA ui design/home mobile.png" onclick="openModal();currentSlide(1)"  alt="">
+          </div>
+          <div class="port-photo-section"  >
+            <img class="thumbnail" src="images/portfolio/IGSTRA ui design/about desktop.png" onclick="openModal();currentSlide(2)"  alt="">
+          </div>
+          <div class="port-photo-section" >
+            <img class="thumbnail" src="images/portfolio/IGSTRA ui design/about mobile.png" onclick="openModal();currentSlide(3)"  alt="">
+          </div>
+
+      </div> <!--port-photo-container-->
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span> 
+        <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 3</div>
+              <p class="modalcaption">The mobile version stacks the animated banner text.</p>
+              <img src="images/portfolio/IGSTRA ui design/home mobile.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 3</div>
+              <p class="modalcaption">The desktop about page features a wide-angle shot of the ensemble with parallax scrolling.</p>
+              <img src="images/portfolio/IGSTRA ui design/about desktop.png" style="width:100%">
+              
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">3 / 3</div>
+              <p class="modalcaption">In the mobile version, parallax is disabled and the wide-angle image is cropped into two sections featuring closeups of the singers.</p>
+              <img src="images/portfolio/IGSTRA ui design/about mobile.png" style="width:100%">
+            </div> 
+            
+        </div> <!--modal-content-->
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+
+      </div> <!--modal-->
 
 </div> <!--portfolio-container-->
 

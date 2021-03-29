@@ -808,3 +808,10 @@ img.demo {
   text-align: center;
   padding-bottom: 20px;
 }
+.design-link {
+  padding: 30px 0;
+}
+.design-link a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
