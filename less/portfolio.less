@@ -3,6 +3,22 @@
     width: 80%;
     margin: 50px 10%;
 }
+
+.back {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    a {
+        text-decoration: none;
+        color: @dark-mustard;  
+    }
+}
+
+.back a:hover {
+    color: @mid-gray;
+}
+
 .tab {
     width: 100%;
 }
@@ -21,6 +37,15 @@
 .portfolio-item-container {
     display: flex;
     align-items: space between;
+    .wide-itemImg {
+        max-width: 50%;
+        height: auto;
+        @media @tablet {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
     @media @tablet {
         display: block;
         }
@@ -32,3 +57,62 @@
         }
     }
 }
+
+.portfolio-item-container .wide {
+    max-width: 50%;
+}
+
+.item-intro {
+    h3, h4 {
+        padding-bottom: 20px;
+    }
+}
+
+.moreinfo-container {
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    padding-top: 10px;
+    @media @tablet {
+        flex-direction: column;
+    }
+    .row {
+        width: 33%;
+        display: flex;
+        align-items: space-between;
+        justify-content: center;
+        @media @tablet {
+            width: 100%;
+        }
+        @media @mobile {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .photo-section {
+        width: 90%;
+        border: 1px solid @mid-gray;
+        margin: 10px;
+        cursor: pointer;
+        }
+        @media @mobile {
+            width: 100%;
+            top: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+.mySlides img {
+    object-fit: contain;
+}
+
+.modalcaption {
+    color: @off-white;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
