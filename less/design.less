@@ -1,88 +1,48 @@
-.portfolio-container {
+.design-container {
     position: relative;
     width: 80%;
     margin: 50px 10% 50px 10%;
+    .design-row {
+        display: flex;
+        justify-content:stretch;
+        align-items: flex-start;
+        // .test2();
+        .design-link {
+            cursor: pointer;
+        }
+        .design-link:hover {
+            opacity: 50%;
+        }
+        @media @mobile {
+            display: block;  
+        }
+    }
+    .design-item {
+        padding: 10px;
+        border: .5px solid @light-gray;
+        margin: 10px;
+        // .test();
+    }
+    img {
+        max-width: 100%;
+        object-fit: cover;
+        max-height: 1200px; //this controls that collage look. 
+        @media @mobile {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     @media @mobile {
         width: 90%;
         margin: 20px 5% 50px 5%;
     }
-    h3 {
-        padding: 20px 0;
-        @media @mobile {
-            text-align: center;
-        }
-    }
-
-}
-
-.portfolio-sub-headings {
-    cursor: pointer;    
-    padding: 20px 0;
-    a {
-        text-decoration: none;
-        font-size: 3rem;
-        font-family: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-style: italic;
-        font-weight: 700;
-        color: @dark-mustard;
-    }  
-    @media @mobile {
-        text-align: center;
-        padding: 20px 0;
-    }
-}
- 
-.portfolio-sub-headings a:hover {
-    color: @mid-gray;
-}
-
-.portfolio-container img {
-    max-width: 100%;
-    object-fit: cover;
-    max-height: 400px;
-    @media @mobile {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    h6 {
-        display: none;
-        text-align: center;
-        color: @berry;
-        font-weight: bold;
-        font-family: 'Montserrat', Helvetica, sans-serif;
-        @media @mobile {
-            font-size: 2.1rem;
-            line-height: 1.5;
-        }
-    }
-    @media @mobile {
-        display: block;  
-    }
-}
-
-.portfolio-container .item {
-    // .test();
-    padding: 10px;
-    @media @mobile {
-        border: 1px solid @light-gray;
-        margin: 5px 0; 
-    }  
 }
 
 
-.design-link {
-    cursor: pointer;
-}
 
-.design-link:hover {
-    opacity: 50%;
-    
-}
+
+
+
+
 
