@@ -1,7 +1,7 @@
 .portfolio-container {
     position: relative;
     width: 80%;
-    margin: 50px 10% 50px 10%;
+    margin: 40px 10% 40px 10%;
     @media @mobile {
         width: 90%;
         margin: 20px 5% 50px 5%;
@@ -25,7 +25,14 @@
 
 .portfolio-page-header {
     width: 100%;
-    padding: 40px 0 30px 0;
+    padding: 30px 0; 
+}
+
+.portfolio-heading {
+    padding-bottom: 20px;
+}
+.portfolio-subheading {
+    padding-bottom: 20px;
 }
 
 .portfolio-item-container {
@@ -46,6 +53,12 @@
         @media @tablet {
             padding-top: 30px;
         }
+    }
+    .port-intro-img {
+        max-width: 100%;
+        margin: 20px 0;
+        padding: 30px;
+        border: .25px solid @light-gray;
     }
 }
 
@@ -108,10 +121,16 @@
 }
 
 .design-link {
-    padding: 30px 0;
+   padding: 30px 0;
     a {
         font-size: 1.2rem;
         font-weight: bold;
+        line-height: 3rem;
     }
     
 }    
+
+.layout-break {
+    width: 100%;
+    height: 50px;
+}

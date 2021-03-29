@@ -703,7 +703,7 @@ img.demo {
 .portfolio-container {
   position: relative;
   width: 80%;
-  margin: 50px 10% 50px 10%;
+  margin: 40px 10% 40px 10%;
 }
 @media (max-width: 600px) {
   .portfolio-container {
@@ -726,7 +726,13 @@ img.demo {
 }
 .portfolio-page-header {
   width: 100%;
-  padding: 40px 0 30px 0;
+  padding: 30px 0;
+}
+.portfolio-heading {
+  padding-bottom: 20px;
+}
+.portfolio-subheading {
+  padding-bottom: 20px;
 }
 .portfolio-item-container {
   display: flex;
@@ -751,6 +757,12 @@ img.demo {
   .portfolio-item-container .item-intro {
     padding-top: 30px;
   }
+}
+.portfolio-item-container .port-intro-img {
+  max-width: 100%;
+  margin: 20px 0;
+  padding: 30px;
+  border: 0.25px solid #CCC5C6;
 }
 .port-photo-container {
   width: 100%;
@@ -814,4 +826,9 @@ img.demo {
 .design-link a {
   font-size: 1.2rem;
   font-weight: bold;
+  line-height: 3rem;
+}
+.layout-break {
+  width: 100%;
+  height: 50px;
 }
