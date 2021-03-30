@@ -33,34 +33,107 @@
         <a href="design.html" > < BACK</a>
     </div> <!--back-->
 
+    <div class="portfolio-page-header">
+      <h3 class="portfolio-heading">Design, Layout & Photography</h3>
+      <h4 class="portfolio-subheading"> J & J Lubrano Sales Catalogues</h4>
+    </div>
+
     <div class="portfolio-item-container">
-        <img src="images/portfolio/Mod 1 cover.png" alt="Catalogue cover in shades of gray with modern typography and a swirling art-deco cover image">
+        <img class="portfolio-header-img" src="images/portfolio/Mod 1 cover.png" alt="Catalogue cover in shades of gray with modern typography and a swirling art-deco cover image">
         <div class="item-intro">
-            <h3>Design, Layout & Photography</h3>
-            <h4>J&J Lubrano Sales Catalogues</h4>
-            <br>
+            
             <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
             <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
             <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+            <img class="port-intro-img" src="images/portfolio/LUBRANO catalogues/Mod 1 inside.png" alt="two-page catalogue spread">
+
       </div> <!--item-intro-->
     </div> <!--portfolio-item-container"-->
-    <div class="moreinfo-container">
-        
-      <div class="photo-section" >
-        <img src="images/portfolio/IGSTRA ui design/home mobile.png" alt="">
-        <p class="basiccaption">The mobile version stacks the animated banner text.</p>
-      </div>
-      <div class="photo-section"  >
-        <img src="images/portfolio/IGSTRA ui design/about desktop.png" alt="">
-        <p class="basiccaption">The desktop about page features a wide-angle shot of the ensemble with parallax scrolling.</p>
-      </div>
-      <div class="photo-section" >
-        <img src="images/portfolio/IGSTRA ui design/about mobile.png" alt="">
-        <p class="basiccaption">In the mobile version, parallax is disabled and the wide-angle image is cropped into two sections featuring closeups of the singers.</p>
-      </div>
+    <div class="port-photo-container">
+      
+
+        <div class="port-photo-section" >
+          <img class="thumbnail" src="images/portfolio/LUBRANO catalogues/Mod 1 back.png" onclick="openModal();currentSlide(1)" class="thumbnail">
+        </div>
+        <div class="port-photo-section"  >
+          <img class="thumbnail" src="images/portfolio/LUBRANO catalogues/Mod 2 cover.png" onclick="openModal();currentSlide(2)" class="thumbnail" alt="">
+    
+        </div>
+        <div class="port-photo-section" >
+          <img class="thumbnail" src="images/portfolio/LUBRANO catalogues/Potpourri cover.png"  onclick="openModal();currentSlide(3)" class="thumbnail" alt="">
+
+        </div>
+
+        <div class="port-photo-section" >
+          <img class="thumbnail" src="images/portfolio/LUBRANO catalogues/Hungarian cover.png" onclick="openModal();currentSlide(4)" class="thumbnail">
+
+        </div>
+        <div class="port-photo-section"  >
+          <img class="thumbnail" src="images/portfolio/LUBRANO catalogues/Hun inside 1.png" onclick="openModal();currentSlide(5)" class="thumbnail" alt="">
+  
+        </div>
+        <div class="port-photo-section" >
+          <img class="thumbnail" src="images/portfolio/LUBRANO catalogues/Hun inside 2.png"  onclick="openModal();currentSlide(6)" class="thumbnail" alt="">
+          
+        </div>
+ 
   </div> <!--moreinfo-container-->
 
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span> 
+    <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <!-- <p class="modalcaption"></p> -->
+          <img src="images/portfolio/LUBRANO catalogues/Mod 1 back.png" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <!-- <p class="modalcaption"></p> -->
+          <img src="images/portfolio/LUBRANO catalogues/Mod 2 cover.png" style="width:100%">
+          
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <!-- <p class="modalcaption"></p> -->
+          <img src="images/portfolio/LUBRANO catalogues/Potpourri cover.png" style="width:100%">
+          
+        </div> 
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <!-- <p class="modalcaption"></p> -->
+          <img src="images/portfolio/LUBRANO catalogues/Hungarian cover.png" style="width:100%">
+          
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <!-- <p class="modalcaption"></p> -->
+          <img src="images/portfolio/LUBRANO catalogues/Hun inside 1.png" style="width:100%">
+          
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <!-- <p class="modalcaption"></p> -->
+          <img src="images/portfolio/LUBRANO catalogues/Hun inside 2.png" style="width:100%">
+        </div>
+    </div> <!--modal-content-->
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  </div> <!--modal-->
+
+  <div class="portfolio-item-container">
+    <div class="item-intro">
         
+        <p>The new catalogues maintained certain brand identity markers through color and typography, but were largely designed to showcase and complement the particular styles of featured inventory. The primary goal was to design catalogues stylistically curated to match the contents. </p>
+        <br><p>For comparison, see some examples of the firm's previous catalogues <a href="https://www.lubranomusic.com/images/upload/catalogue-85-september-2019.pdf" class="inline-link" target="blank">here</a> and <a href="https://www.lubranomusic.com/images/upload/marilyn-horne.pdf" target="blank" class="inline-link">here</a>. </p>
+        <br><p>In addition to better curating the material, the redesigned catalogues were more interactive, with an internally hyperlinked table of contents and active links between the catalogue inventory numbers and the sales website.</p>
+       
+  </div> <!--item-intro-->
+</div> <!--portfolio-item-container"-->
+<div class="port-photo-container">
 
 </div> <!--portfolio-container-->
 
