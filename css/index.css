@@ -751,7 +751,6 @@ img.demo {
 @media (max-width: 1200px) {
   .portfolio-item-container .portfolio-header-img {
     width: 100%;
-    object-fit: contain;
   }
 }
 .portfolio-item-container .item-intro .inline-link a {
@@ -772,7 +771,7 @@ img.demo {
   width: 100%;
   display: flex;
   align-items: space-between;
-  justify-content: stretch;
+  justify-content: center;
   padding-top: 20px;
 }
 @media (max-width: 1200px) {
@@ -798,6 +797,7 @@ img.demo {
 }
 .port-photo-container .port-photo-section .thumbnail {
   max-width: 100%;
+  height: auto;
   padding: 5px 2px;
 }
 @media (max-width: 600px) {
