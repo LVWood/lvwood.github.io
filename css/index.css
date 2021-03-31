@@ -802,7 +802,7 @@ img.demo {
 }
 @media (max-width: 600px) {
   .port-photo-section {
-    flex-direction: row;
+    display: block;
   }
 }
 .port-thumbnail {
