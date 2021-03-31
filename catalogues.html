@@ -1,0 +1,155 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leslee Wood</title>
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  <link href="css/index.css" rel="stylesheet">
+  <!--icon library for hamburgers-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="sub-nav">
+        <a href="index.html" class="initial-logo" >LW</a>
+        <nav class="nav" id="myNav">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="works.html" >COMPOSITIONS</a> 
+          <a href="press.html" >PRESS KIT</a>
+          <a href="design.html">DESIGN PORTFOLIO</a>
+    
+        </nav>   
+    </header>
+
+<div class="portfolio-container">
+    <div class="back">
+        <a href="design.html" > < BACK</a>
+    </div> <!--back-->
+
+    <div class="portfolio-page-header">
+      <h3 class="portfolio-heading">Design, Layout & Photography</h3>
+      <h4 class="portfolio-subheading"> J & J Lubrano Sales Catalogues</h4>
+    </div>
+
+    <div class="portfolio-item-container">
+        <img class="portfolio-header-img" src="images/portfolio/Mod 1 cover.png" alt="Catalogue cover in shades of gray with modern typography and a swirling art-deco cover image">
+        <div class="item-intro">
+            
+            <p>THE BRIEF: Update the presentation of sales catalogues, curated collections of carefully researched and assessed antiquarian musical items. </p>
+            <br><p>CHALLENGES: While the firm's previous publications were full of rigorous research and contained highly valuable materials, relatively little effort or time was invested toward presenting the material in a visually stimulating way or toward curating the material beyond simple alphabetical lists. <br>In my designs, careful efforts were made to create clear typographical hierarchy for easy, at-a-glance comprehension of what could be extremely dense, wordy descriptions. Whitespace, typographical consistency, and carefully planned placement of images and text were priorities in my designs.  </p>
+            <br><p>REWARDS: Presenting material of great artistic, historic, and cultural value was a pleasure. The autograph manuscripts, first editions, letters, sketches, and rare musical works that I worked with deserved visual presentation as beautiful as the works themselves and it was gratifying to design catalogues that were as thoughtfully composed as their contents deserved.  </p>
+            <br><p>All my catalogue designs can be viewed in their entirety online <a class="inline-link" href="https://issuu.com/leslee-wood/stacks/6c9836eb1e374d73be8fe10a1597d076"> here</a>.</p>
+
+          
+            
+            <img class="port-intro-img" src="images/portfolio/LUBRANO catalogues/Mod 1 inside.png" alt="two-page catalogue spread">
+
+      </div> <!--item-intro-->
+    </div> <!--portfolio-item-container"-->
+    <div class="port-photo-container">
+      
+
+        <div class="port-photo-section" >
+          <img class="port-thumbnail" src="images/portfolio/LUBRANO catalogues/Mod 1 back.png" onclick="openModal();currentSlide(1)" alt="back cover of a catalogue, solid dark gray with white lettering across the back.">
+        </div>
+        <div class="port-photo-section"  >
+          <img class="port-thumbnail" src="images/portfolio/LUBRANO catalogues/Mod 2 cover.png" onclick="openModal();currentSlide(2)" " alt="front cover of a catalogue with a central image of a mid-20th century sketch consisting of a grid with small diagonal hashes in various colors making a multi-colored rectangle in the center of the page.">
+    
+        </div>
+        <div class="port-photo-section" >
+          <img class="port-thumbnail" src="images/portfolio/LUBRANO catalogues/Potpourri cover.png"  onclick="openModal();currentSlide(3)"  alt="front cover of a catalogue with an antique looking lithograph of an old, bearded shepherd playing a small harp next to a lake where mermaids are swimming">
+
+        </div>
+
+        <div class="port-photo-section" >
+          <img class="port-thumbnail" src="images/portfolio/LUBRANO catalogues/Hungarian cover.png" onclick="openModal();currentSlide(4)" alt="front cover of a catalogue" >
+
+        </div>
+        <div class="port-photo-section"  >
+          <img class="port-thumbnail" src="images/portfolio/LUBRANO catalogues/Hun inside 1.png" onclick="openModal();currentSlide(5)"  alt="">
+  
+        </div>
+        <div class="port-photo-section" >
+          <img class="port-thumbnail" src="images/portfolio/LUBRANO catalogues/Hun inside 2.png"  onclick="openModal();currentSlide(6)"  alt="">
+          
+        </div>
+ 
+  </div> <!--moreinfo-container-->
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span> 
+    <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <p class="modalcaption">Back cover of "Modern Music - 20th Century Part 1"</p>
+          <img src="images/portfolio/LUBRANO catalogues/Mod 1 back.png" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <p class="modalcaption">Front cover of "Modern Music - 20th Century Part 2"</p>
+          <img src="images/portfolio/LUBRANO catalogues/Mod 2 cover.png" style="width:100%">
+          
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <p class="modalcaption">Front cover of "Summer Potpourri", design adapted from the lithographic cover of a 19th century song-sheet included in the catalogue.</p>
+          <img src="images/portfolio/LUBRANO catalogues/Potpourri cover.png" style="width:100%">
+          
+        </div> 
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <p class="modalcaption">Front cover of "Hungary 1840-1940" design adapted from the design of an early 20th century song-sheet included in the catalogue. </p>
+          <img src="images/portfolio/LUBRANO catalogues/Hungarian cover.png" style="width:100%">
+          
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <p class="modalcaption">Double-page spread including glossary, table of contents and introduction from "Hungary 1840-1940"</p>
+          <img src="images/portfolio/LUBRANO catalogues/Hun inside 1.png" style="width:100%">
+          
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <p class="modalcaption">Double-page spread showing a centerpiece item, a musical manuscript with corrections by composer Franz Liszt, from "Hungary 1840-1940"</p>
+          <img src="images/portfolio/LUBRANO catalogues/Hun inside 2.png" style="width:100%">
+        </div>
+    </div> <!--modal-content-->
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  </div> <!--modal-->
+
+  <div class="portfolio-item-container">
+    <div class="item-intro">
+        
+        <p>The new catalogues maintained certain brand identity markers through color and typography, but were largely designed to showcase and complement the particular styles of featured inventory. The primary goal was to design catalogues stylistically curated to match the contents. </p>
+        <br><p>For comparison, see some examples of the firm's previous catalogues <a href="https://www.lubranomusic.com/images/upload/catalogue-85-september-2019.pdf" class="inline-link" target="blank">here</a> and <a href="https://www.lubranomusic.com/images/upload/marilyn-horne.pdf" target="blank" class="inline-link">here</a>. </p>
+        <br><p>In addition to better curating the material, the redesigned catalogues were more interactive, with an internally hyperlinked table of contents and active links between the catalogue inventory numbers and the sales website.
+       
+  </div> <!--item-intro-->
+</div> <!--portfolio-item-container"-->
+
+<div class="design-link">
+  <a href="https://issuu.com/leslee-wood/stacks/6c9836eb1e374d73be8fe10a1597d076" class="design-link" target="blank">View my catalogue designs in their entirety at issu.com</a>
+</div>
+
+</div> <!--portfolio-container-->
+
+<footer class="sub-footer">
+    <h6>email -</h6><a href="mailto:leslee.wood@gmail.com"> leslee.wood@gmail.com </a><h6>| copyright 2021 by LV Wood</h6>
+</footer>
+
+
+<script src="scripts.js" ></script>
+
+</body>
+</html>

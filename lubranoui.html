@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leslee Wood</title>
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  <link href="css/index.css" rel="stylesheet">
+  <!--icon library for hamburgers-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="sub-nav">
+        <a href="index.html" class="initial-logo" >LW</a>
+        <nav class="nav" id="myNav">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="works.html" >COMPOSITIONS</a> 
+          <a href="press.html" >PRESS KIT</a>
+          <a href="design.html">DESIGN PORTFOLIO</a>
+    
+        </nav>   
+    </header>
+
+<div class="portfolio-container">
+  <div class="back">
+    <a href="design.html" > < BACK</a>
+  </div> <!--back-->
+  
+  <div class="portfolio-page-header">
+    <h3 class="portfolio-heading">Website Redesign - J & J Lubrano Music Antiquarians</h3>
+    <!-- <h4 class="portfolio-subheading">J&J Lubrano Music Antiquarians</h4> -->
+  </div>
+        
+  <div class="portfolio-item-container">
+    <img class="portfolio-header-img" src="images/portfolio/lubrano UI.png" alt="open laptop showing homepage for music antiquarian website">
+    <div class="item-intro">
+        <p>THE BRIEF: redesign a pre-existing commercial website in order to modernize the firm's branding and online presence. A well-respected company with a loyal but aging clientele, they needed an updated online presence in order to satisfy a new generation of clients.</p>
+        <br><p>REWARDS: for a venerable antiquarian firm with over 40 years in the business, it was a rewarding challenge to freshen and simplify the site while maintaining familiar brand identity.</p>
+        <br><p>CHALLENGES: the site's pre-existing branding (logo, colors) were used haphazardly and without a formal style-guide. It relied on low-quality, non-scalable images and had not been updated in some time. Additionally, the site was hosted and managed by a 3rd party company and any design updates would need to adhere to the template and data structure already in use.</p>
+    </div> <!--item-intro-->
+  </div> <!-- class="portfolio-item-container" -->
+  
+        <div class="port-photo-container">
+
+          <div class="port-row">
+
+            <div class="port-photo-section" >
+              <img class="thumbnail" src="images/portfolio/LUBRANO site redesign/logo compare.png" onclick="openModal();currentSlide(1)" class="thumbnail" alt="before and after comparison of a logo, the older is a fuzzy image of a musical instrument centered in a burgundy frame with a taupe background. The newer shows the instrument as a crisp vector without a frame against a burgundy background.">
+              <p class="photocaption">Before & After: Logo</p>
+            </div>
+
+            <div class="port-photo-section" >
+              <img class="thumbnail" src="images/portfolio/LUBRANO site redesign/color compare.png" onclick="openModal();currentSlide(2)" class="thumbnail" alt="comparison of two color charts, one with burgundy and olive against an off-white background, the other burgundy, olive, and taupe against a beige background.">
+              <p class="photocaption">Before & After: Brand Colors</p>
+            </div>
+          
+            <div class="port-photo-section"  >
+              <img class="thumbnail" src="images/portfolio/LUBRANO site redesign/tile compare.png" onclick="openModal();currentSlide(3)" class="thumbnail" alt="comparison of two web tiles, one a somewhat fuzzy photo collage of book covers and spines, the other a single photo of a book open on a table">
+              <p class="photocaption">Before & After: Tiles</p>
+            </div>
+
+          </div> <!--port-row-->
+
+          <div class="port-row">
+
+            <div class="port-photo-section" >
+              <img class="thumbnail" src="images/portfolio/LUBRANO site redesign/homepage.png" onclick="openModal();currentSlide(4)" class="thumbnail" alt="before and after comparison of desktop homepages. The older uses the unfocused logo, color scheme with beige background, and photo collage category tiles. The redesign has a crisp off-white background, uses the new vector logo and single-image category tiles.">
+              <p class="photocaption">Before & After: Home</p>
+            </div>
+         
+            <div class="port-photo-section" >
+              <img class="thumbnail" src="images/portfolio/LUBRANO site redesign/inventory page.png" onclick="openModal();currentSlide(5)" class="thumbnail" alt="before and after comparison on inventory page. The older version shows inventory images in a grid and the older color scheme, the newer arranges items in a list with textual explanations and features the updated color scheme.">
+              <p class="photocaption">Before & After: Inventory Page</p>
+            </div>
+
+            <div class="port-photo-section" >
+              <img class="thumbnail" src="images/portfolio/LUBRANO site redesign/item page.png" onclick="openModal();currentSlide(6)" class="thumbnail" alt="before and after comparison of item page showing large image of book and several paragraphs of descriptive text. The older version uses the old color scheme without much typographic variation. The newer version has updated colors, the same basic layout, but has greater textual clarity through the use of subtle typographic size, weight, and style variation.">
+              <p class="photocaption">Before & After: Item Page</p>
+            </div>
+
+          </div> <!--port-row-->
+
+        </div> <!--photo container-->
+            
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span> 
+          <div class="modal-content">
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <p class="modalcaption">The updated logo replaced a low-resolution, non-scalable lyre design with a clean vector version and updated colors and typography.</p>
+                <img src="images/portfolio/LUBRANO site redesign/logo compare.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <p class="modalcaption">While maintaining the existing brand colors, the new design (top) discards low-contrast color pairings and alters color ratios.</p>
+                <img src="images/portfolio/LUBRANO site redesign/color compare.png" style="width:100%">
+                
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <p class="modalcaption">The orginal homepage relied on image collages for category tiles. In the updated version, a single, striking image and larger, updated text represents each category. </p>
+                <img src="images/portfolio/LUBRANO site redesign/tile compare.png" style="width:100%">
+                
+              </div> 
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <p class="modalcaption">The redesigned homepage has greater color contrast, a more striking layout with clearer imagery, and a clean, crisp logo.</p>
+                <img src="images/portfolio/LUBRANO site redesign/homepage.png" style="width:100%">
+                
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <p class="modalcaption">Maintaining the same basic structure, the redesigned inventory page defaults to a list display, enabling more textual descriptions that provide meaningful, at-a-glance information essential to the antiquarian collector.</p>
+                <img src="images/portfolio/LUBRANO site redesign/inventory page.png" style="width:100%">
+                
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <p class="modalcaption">The redesigned item page makes better use of type hierarchy in order to parse different information types (publication, edition, binding, etc) more quickly</p>
+                <img src="images/portfolio/LUBRANO site redesign/item page.png" style="width:100%">
+              </div>
+          </div> <!--modal-content-->
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+  
+        </div> <!--modal-->
+      </div>
+
+      <footer class="sub-footer">
+        <h6>email -</h6><a href="mailto:leslee.wood@gmail.com"> leslee.wood@gmail.com </a><h6>| copyright 2021 by LV Wood</h6>
+      </footer>
+    
+    
+    <script src="scripts.js" ></script>
+    
+    </body>
+    </html>

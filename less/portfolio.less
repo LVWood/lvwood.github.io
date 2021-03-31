@@ -1,7 +1,11 @@
-
 .portfolio-container {
+    position: relative;
     width: 80%;
-    margin: 50px 10%;
+    margin: 40px 10% 40px 10%;
+    @media @mobile {
+        width: 90%;
+        margin: 20px 5% 50px 5%;
+    }
 }
 
 .back {
@@ -13,106 +17,164 @@
         text-decoration: none;
         color: @dark-mustard;  
     }
+    .back a:hover {
+        color: @mid-gray;
+    }
+    
 }
 
-.back a:hover {
-    color: @mid-gray;
-}
-
-.tab {
+.portfolio-page-header {
     width: 100%;
+    padding: 30px 0; 
 }
-.portfolio-container .tablink {
-    width: 25%;
-    height: 90px;
-    @media @tablet {
-        height: 70px;
-        font-size: 1.6rem;
-    }
-    @media @mobile {
-        font-size: 1.2rem;
-    }
+
+.portfolio-heading {
+    padding-bottom: 20px;
+}
+.portfolio-subheading {
+    padding-bottom: 20px;
 }
 
 .portfolio-item-container {
     display: flex;
     align-items: space between;
-    .wide-itemImg {
-        max-width: 50%;
-        height: auto;
-        @media @tablet {
-            display: block;
-            max-width: 100%;
-        }
-    }
-
+    justify-content: space-between;
     @media @tablet {
         display: block;
         }
-    img {
-        margin-right: 20px;
-        @media @tablet {
-            width: 100%;
-            object-fit: scale-down;
+    }
+.portfolio-header-img {
+    width: 50%;
+    // height: auto;
+    margin-right: 20px;
+    @media @tablet {
+        width: 100%;
+        // object-fit: contain;
+    }
+}
+.item-intro {
+    .inline-link {
+        a {
+            font-size: 1.4rem;
         }
     }
-}
-
-.portfolio-item-container .wide {
-    max-width: 50%;
-}
-
-.item-intro {
-    h3, h4 {
-        padding-bottom: 20px;
+    @media @tablet {
+        padding-top: 30px;
     }
 }
+.port-intro-img {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 30px;
+    // border: .25px solid @light-gray;
+}
 
-.moreinfo-container {
+
+.port-photo-container {
+    // .test2();
+    width: 100%;
     display: flex;
     align-items: space-between;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 20px;
     @media @tablet {
-        flex-direction: column;
+        display: block;
     }
-    .row {
-        width: 33%;
-        display: flex;
-        align-items: space-between;
-        justify-content: center;
-        @media @tablet {
-            width: 100%;
-        }
-        @media @mobile {
-            display: block;
-            img {
-                width: 100%;
-            }
-        }
+}
+.port-row {
+    display: flex;
+    align-items: space-between;
+    justify-content: flex-start;
+    width: 50%;
+    @media @tablet {
+        width: 100%;
     }
-    .photo-section {
-        width: 90%;
-        border: 1px solid @mid-gray;
-        margin: 10px;
-        cursor: pointer;
-        }
-        @media @mobile {
-            width: 100%;
-            top: 0;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    @media @mobile {
+        display: block;
+        object-fit: cover;
     }
+}
+   
+.port-photo-section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    @media @mobile {
+        flex-direction: row;
+    }
+}       
+.port-thumbnail {
+    width: 100%;
+    height: auto;
+    padding: 5px 2px;
+}
+.port-thumbnail:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+.photocaption {
+    text-align: center;
+}
+
+
+
+.video-container16-9 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; //don't change. this is for 16:9 aspect ratio
+}
+.video-container4-3 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 75%; //don't change. this is for 4:3 aspect ratio
+}
+.video-container3-2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 66.66%; //don't change. this is for 3:2 aspect ratio
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .mySlides img {
+    max-width: 80%;
+    margin: 0 10%;
     object-fit: contain;
+    // height: 100%;
 }
 
 .modalcaption {
     color: @off-white;
     position: relative;
     text-align: center;
-    padding-top: 20px;
+    padding-bottom: 20px;
 
+}
+
+.design-link {
+   padding: 30px 0;
+   width: 100%;
+    a {
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 3rem;
+    }
+    
+}    
+
+.layout-break {
+    width: 100%;
+    height: 50px;
 }
 

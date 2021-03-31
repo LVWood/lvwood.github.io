@@ -1,0 +1,38 @@
+.tab {
+    overflow: hidden;
+   
+}
+.tablink {
+    // background-color: @dark-gray;
+    color: @mid-gray;
+    font-family: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.6rem;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2% 5%;
+    font-size: 2.1rem;
+    width: 33.3%;
+    transition: .3s;
+    @media @tablet {
+        font-size: 1.6rem;
+    }
+    @media @mobile {
+        font-size: 1.4rem;
+    }
+}
+.tablink:hover {
+    background-color: @light-gray;
+}
+.tablink.active {
+    background-color: @berry;
+    color: @off-white;
+}
+.tabcontent {
+    color: @off-black;
+    display: none;
+    padding: 5%;
+    text-align: left;
+    background-color: #f8f8f8
+}
